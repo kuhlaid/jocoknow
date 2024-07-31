@@ -1,145 +1,141 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-require('dotenv').config();   // required to use environment variables
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-// With JSDoc @type annotations, IDEs can provide config autocompletion
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-(
-  module.exports = {
-    title: process.env.NAVBAR_TITLE,
-    tagline: 'Open source research data repository software',
-    url: 'http://localhost:3000/',
-    baseUrl: '/',
-    onBrokenLinks: 'throw',
-    onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
+import {themes as prismThemes} from 'prism-react-renderer';
 
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: process.env.GITHUB_USER, // Usually your GitHub org/user name.
-    projectName: process.env.GITHUB_REPO_NAME, // Usually your repo name.
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  favicon: 'img/favicon.ico',
 
-    // Even if you don't use internalization, you can use this field to set useful
-    // metadata like html lang. For example, if your site is Chinese, you may want
-    // to replace "en" with "zh-Hans".
-    i18n: {
-      defaultLocale: 'en',
-      locales: ['en'],
-    },
+  // Set the production url of your site here
+  url: 'https://your-docusaurus-site.example.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
 
-    presets: [
-      [
-        '@docusaurus/preset-classic',
-        /** @type {import('@docusaurus/preset-classic').Options} */
-        ({
-          docs: {
-            path: 'docs',
-            sidebarPath: require.resolve('./sidebars.js'),
-            // Please change this to your repo.
-            // Remove this to remove the "edit this page" links.
-            editUrl: process.env.EDIT_URL,
-            versions: {
-              current: {
-                label: 'current',
-              },
-            },
-            lastVersion: 'current',
-            showLastUpdateAuthor: true,
-            showLastUpdateTime: true,
-          },
-          blog: {
-            showReadingTime: true,
-            // Please change this to your repo.
-            // Remove this to remove the "edit this page" links.
-            editUrl: process.env.EDIT_URL,
-          },
-          theme: {
-            customCss: require.resolve('./src/css/custom.css'),
-          },
-        }),
-      ],
-    ],
-    themes: [
-      // ... Your other themes.
-      [
-        require.resolve("@easyops-cn/docusaurus-search-local"),
-        {
-          // ... Your options.
-          // `hashed` is recommended as long-term-cache of index file is possible.
-          hashed: true,
-          highlightSearchTermsOnTargetPage: true
-        },
-      ],
-    ],
-    // themes: ['docusaurus-theme-search-typesense'],
-    themeConfig:
-      //** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // algolia: {
-        //   appId: process.env.ALGOLIA_APPID,
-        //   apiKey: process.env.ALGOLIA_APPKEY,
-        //   indexName: process.env.ALGOLIA_INDEX,
-        //   contextualSearch: true,
-        // },
-        navbar: {
-          title: process.env.NAVBAR_TITLE,
-          logo: {
-            alt: 'JoCoKnow Logo',
-            src: 'img/logo.svg',
-          },
-          items: [
-            { to: '/docs/category/user-guide', label: 'User Guide', position: 'left' },
-            { to: '/docs/category/admin-guide', label: 'Admin Guide', position: 'left' },
-            {
-              href: process.env.GITHUB_REPO_URL,
-              label: 'GitHub',
-              position: 'right',
-            },
-          ],
+        docs: {
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        footer: {
-          style: 'dark',
-          links: [
-            {
-              title: `About this site`,
-              items: [
-                {
-                  label: 'Changelog',
-                  to: '/docs/changelog',
-                },
-                {
-                  label: 'Terminology',
-                  to: '/docs/terminology',
-                },
-              ],
-            },
-            {
-              title: 'Community',
-              items: [
-                {
-                  label: 'Stack Overflow',
-                  href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                },
-                {
-                  label: 'Discord',
-                  href: 'https://discordapp.com/invite/docusaurus',
-                },
-                {
-                  label: 'Twitter',
-                  href: 'https://twitter.com/docusaurus',
-                },
-              ],
-            },
-          ],
-          copyright: `Copyright © ${new Date().getFullYear()} The JoCoKnow Project<br/>This documentation built 
-        with Docusaurus on ${new Date().toLocaleString()}.`,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        prism: {
-          theme: lightCodeTheme,
-          darkTheme: darkCodeTheme,
+        theme: {
+          customCss: './src/css/custom.css',
         },
       }),
-  }
-);
+    ],
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'My Site',
+        logo: {
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorial',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Tutorial',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+    }),
+};
+
+export default config;
