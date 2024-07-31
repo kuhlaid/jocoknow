@@ -4,9 +4,6 @@
 # Production
 /build
 
-# ignore this for now
-/blog
-
 # Generated files
 .docusaurus
 .cache-loader
@@ -21,10 +18,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-*.rst
-package-lock.json
-
-/src/css
-test.js
-.env
