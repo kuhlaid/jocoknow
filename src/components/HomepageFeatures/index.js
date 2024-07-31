@@ -2,34 +2,32 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+// this contains the data for our features
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Publicly accessible',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Our de-identified JoCo data can be quickly and easily searched and downloaded for analysis, without the need for complicated and time consuming IRB approval processes required of identified data.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'FAIR data',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The JoCo datasets are designed with accessibility in mind. We provide you with the data in open formats and the metadata you need to automate your analyses.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by the Zenodo API',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        We help you quickly get the most of out working with JoCo data by providing you with Jupyter Notebooks with all the scripts you need to retrieve data from our repository using the Zenodo API. So you can query and pull data directly into your reseach computing platform through the Jupyter Notebook.
       </>
     ),
   },
