@@ -35,7 +35,7 @@ const config = {
   },
 
   // adding search capabilities
-  plugins: ["@orama/plugin-docusaurus-v3"],
+  // plugins: ["@orama/plugin-docusaurus-v3"],
 
   presets: [
     [
