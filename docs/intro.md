@@ -2,11 +2,7 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
-
-Let's discover **JoCoKnow in less than 5 minutes**.
-
-## Getting Started
+# Getting Started
 
 What do you need to know to start working with JoCo data?
 

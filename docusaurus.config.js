@@ -34,6 +34,9 @@ const config = {
     locales: ['en'],
   },
 
+  // adding search capabilities
+  plugins: ["@orama/plugin-docusaurus-v3"],
+
   presets: [
     [
       'classic',
