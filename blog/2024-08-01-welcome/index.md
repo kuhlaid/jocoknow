@@ -4,4 +4,6 @@ title: Welcome
 authors: [pgale]
 ---
 
-First thing we should say is if you would like to leave us suggestions, feedback, or you have questions for us, feel free to fill out a response at (https://unc.az1.qualtrics.com/jfe/form/SV_3ruQfOlS87zcyZE)[https://unc.az1.qualtrics.com/jfe/form/SV_3ruQfOlS87zcyZE?RuPath=https://jocoknow.vercel.app/].
+# We want to hear from you
+
+If you have questions for us or would like to leave us suggestions and feedback, feel use the following form: [https://unc.az1.qualtrics.com/jfe/form/SV_3ruQfOlS87zcyZE](https://unc.az1.qualtrics.com/jfe/form/SV_3ruQfOlS87zcyZE?RuPath=https://jocoknow.vercel.app/).
