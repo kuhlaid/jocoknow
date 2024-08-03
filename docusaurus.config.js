@@ -34,8 +34,22 @@ const config = {
     locales: ['en'],
   },
 
-  // adding search capabilities
-  plugins: ["@orama/plugin-docusaurus-v3"],
+  // waiting on fix for https://github.com/askorama/orama/issues/728 before adding search capabilities
+  // plugins: ["@orama/plugin-docusaurus-v3"],
+
+  // trying orama cloud search index
+  plugins: [
+    [
+      "@orama/plugin-docusaurus-v3",
+      {
+        cloud: {
+          indexId: "https://cloud.orama.run/v1/indexes/go-unc-edu-bogqoa",
+          oramaCloudAPIKey: process.env.ORAMA_CLOUD_API_KEY, // Env variable suggested
+          deploy: "default" // Enables deploy while building/starting
+        },
+      },
+    ],
+  ],
 
   presets: [
     [
