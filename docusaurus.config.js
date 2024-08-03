@@ -37,19 +37,19 @@ const config = {
   // waiting on fix for https://github.com/askorama/orama/issues/728 before adding search capabilities
   // plugins: ["@orama/plugin-docusaurus-v3"],
 
-  // trying orama cloud search index
-  plugins: [
-    [
-      "@orama/plugin-docusaurus-v3",
-      {
-        cloud: {
-          indexId: "https://cloud.orama.run/v1/indexes/go-unc-edu-bogqoa",
-          oramaCloudAPIKey: process.env.ORAMA_CLOUD_API_KEY, // Env variable suggested
-          deploy: "default" // Enables deploy while building/starting
-        },
-      },
-    ],
-  ],
+  // (does not work as of Aug. 2 due to .docusaurus/orama-search-index-current.json.gz file not existing)trying orama cloud search index
+  // plugins: [
+  //   [
+  //     "@orama/plugin-docusaurus-v3",
+  //     {
+  //       cloud: {
+  //         indexId: "https://cloud.orama.run/v1/indexes/go-unc-edu-bogqoa",
+  //         oramaCloudAPIKey: process.env.ORAMA_CLOUD_API_KEY, // Env variable suggested
+  //         deploy: "default" // Enables deploy while building/starting
+  //       },
+  //     },
+  //   ],
+  // ],
 
   presets: [
     [
