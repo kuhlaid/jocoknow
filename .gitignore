@@ -22,5 +22,3 @@ yarn-error.log*
 jocoknow.config.json
 
 .yarn
-.pnp.cjs
-.pnp.loader.mjs
