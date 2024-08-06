@@ -19,4 +19,18 @@ Note, some of the application settings are set as environment variables. The `.e
 
 ## Using the code locally
 
-See Docusaurus documentation for this. It is not recommended. Try using StackBlitz or some other virtual service first, to save you the headache of installing dependencies on your computer.
+See Docusaurus documentation for this. It is not recommended. Try using StackBlitz (which is free but slow to rebuild the site) or some other virtual service first, to save you the headache of installing dependencies on your computer.
+
+## DocSearch scrapper (DOES NOT WORK even though everything looks like it configured correctly)
+
+Review the documentation at https://docsearch.algolia.com/docs/legacy/run-your-own/ or https://docsearch.algolia.com/docs/legacy/config-file
+
+- First we need to log into Algolia and select or create the application we want to use (which in this case is JoCoKnow)
+- Next we need to create the index for this application and give the index a name
+- Next add an API needs the ACL addObject, editSettings and deleteIndex.
+
+the `Search-Only API Key` and copy that to our environment file.
+
+
+Here we will use the `.env.prod` file to define our APPLICATION_ID and API_KEY
+`docker run -it --env-file=.env.prod -e "CONFIG=$(cat jocoknow.config.json | jq -r tostring)" algolia/docsearch-scraper`
