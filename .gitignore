@@ -20,3 +20,7 @@ yarn-debug.log*
 yarn-error.log*
 .env.prod
 jocoknow.config.json
+
+.yarn
+.pnp.cjs
+.pnp.loader.mjs

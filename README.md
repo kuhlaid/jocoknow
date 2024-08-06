@@ -21,6 +21,10 @@ Note, some of the application settings are set as environment variables. The `.e
 
 See Docusaurus documentation for this. It is not recommended. Try using StackBlitz (which is free but slow to rebuild the site) or some other virtual service first, to save you the headache of installing dependencies on your computer.
 
+## Update or add packages
+
+Use Yarn via https://yarnpkg.com/getting-started/install. When adding something like a search module to the package.json script, run `yarn up` to update the packages.
+
 ## DocSearch scrapper (DOES NOT WORK even though everything looks like it configured correctly)
 
 Review the documentation at https://docsearch.algolia.com/docs/legacy/run-your-own/ or https://docsearch.algolia.com/docs/legacy/config-file
