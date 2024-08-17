@@ -23,11 +23,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by the Zenodo API',
+    title: 'Powered by the Dataverse API',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        We help you quickly get the most of out working with JoCo data by providing you with Jupyter Notebooks with all the scripts you need to retrieve data from our repository using the Zenodo API. So you can query and pull data directly into your reseach computing platform through the Jupyter Notebook.
+        We help you quickly get the most of out working with JoCo data by providing you with Jupyter Notebooks with all the scripts you need to retrieve data from our repository using the Dataverse API. So you can query and pull data directly into your reseach computing platform through the Jupyter Notebook.
       </>
     ),
   },

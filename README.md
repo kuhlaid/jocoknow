@@ -23,7 +23,9 @@ See Docusaurus documentation for this. It is not recommended. Try using StackBli
 
 ## Update or add packages
 
-Use Yarn via https://yarnpkg.com/getting-started/install. When adding something like a search module to the package.json script, run `yarn up` to update the packages.
+Use Yarn via https://yarnpkg.com/getting-started/install. When adding something like a search module to the package.json script, run `yarn up` to update the packages or `yarn add` to add a package.
+
+To run the build first run `yarn build` then `yarn run serve` (this is ideal because it builds the site search locally).
 
 ## DocSearch scrapper (DOES NOT WORK even though everything looks like it configured correctly)
 

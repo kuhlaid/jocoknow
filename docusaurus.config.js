@@ -54,7 +54,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          breadcrumbs: true,
           sidebarPath: './sidebars.js',
+          showLastUpdateTime: true, // show date on documents
+          showLastUpdateAuthor: true  // show author who performed update
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:

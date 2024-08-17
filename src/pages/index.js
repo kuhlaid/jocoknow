@@ -28,13 +28,32 @@ function HomepageHeader() {
   );
 }
 
+// Discussion
+function DiscussionBoard() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+      <div className={clsx('hero hero--secondary', styles.heroBanner)}>
+        <p className="container hero__subtitle">
+          Join our discussion
+          <br/>
+          <Link
+            className="button button--primary button--lg"
+            to="https://github.com/kuhlaid/jocoknow/discussions/2">
+            What are the key characteristics you typically look for in dataset statistics? 🤔
+          </Link>
+        </p>
+      </div>
+  );
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.tagline} homepage`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
+      <DiscussionBoard />
       <main>
         <HomepageFeatures />
       </main>

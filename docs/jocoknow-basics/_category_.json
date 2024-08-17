@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial - Basics",
+  "label": "JoCo - Basics",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "If you are new to the JoCo data this is the place to start to learn more about the data that is available."
   }
 }

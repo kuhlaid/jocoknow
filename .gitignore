@@ -22,3 +22,5 @@ yarn-error.log*
 jocoknow.config.json
 
 .yarn
+docs/jupyter-notebook/
+docs/jupyter-notebook/dataverse-api-test/_config.dataverse-test.json

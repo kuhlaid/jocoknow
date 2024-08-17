@@ -1,8 +1,12 @@
 ---
-slug: welcome
-title: Welcome
+slug: suggestions
+title: Suggestions and feedback
 authors: [pgale]
 ---
+
+We welcome your suggestions and feedback. Read more to learn how you can help.
+
+<!-- truncate -->
 
 # We want to hear from you
 
