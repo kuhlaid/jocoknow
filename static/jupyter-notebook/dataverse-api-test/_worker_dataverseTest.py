@@ -14,6 +14,7 @@ class Worker:
         self._config = json.loads(f.read())
         f.close()
         self.ObjDvApi = ObjDvApi(self._config) # here we pass our notebook configuration to the ObjDvApi module and extend the functionality of this object with the ObjDvApi object
+        self.strUploadPath = self._config["strDOCKER_WORKING_DIR"]+self._config["strLOCAL_UPLOAD_DIR"] # creating this because we will reuse it several places
         print("Finished installing and importing modules for the",strConfigFile,"environment") # it is a good idea to end your functions with a print statement so you can visually see when the function ends in the notebook output
 
 
@@ -31,12 +32,21 @@ class Worker:
     # @title Generate files for the dataset
     def createTestFiles(self):
         print("start createTestFiles")
-        strUploadPath = self._config["strDOCKER_WORKING_DIR"]+self._config["strLOCAL_UPLOAD_DIR"]
-        if not os.path.exists(strUploadPath):
-            os.mkdir(strUploadPath)  # create file path if not exists for storing our sample data
+        if not os.path.exists(self.strUploadPath):
+            os.mkdir(self.strUploadPath)  # create file path if not exists for storing our sample data
         for obj in self._config["lstTEST_FILES"]:
-            with open(os.path.join(strUploadPath,obj["name"]), mode='w') as objFile:
+            with open(os.path.join(self.strUploadPath,obj["strFileName"]), mode='w') as objFile:
                 objFile.write(json.dumps(self.createSampleData(), indent=2))
                 objFile.close() # *** WE MUST CLOSE THE FILE AFTER CREATING IT OTHERWISE WE WILL NOT BE ABLE TO OPEN THE FILE FOR UPLOAD ***
                 # self.uploadFile(obj["name"], obj["type"]) # we will do this in a separate function
         print("end createTestFiles")
+
+
+    # @title Upload files to the dataset
+    def uploadTestFiles(self):
+        print("start uploadTestFiles")
+        for objFile in self._config["lstTEST_FILES"]:
+            objFile["strUploadPath"] = self.strUploadPath # we add a few extra properties to the object before sending it to the addDatasetFile method
+            objFile["strDvUrlPersistentId"] = 'asdf'
+            self.ObjDvApi.addDatasetFile(objFile) # we simply pass the objFile so we can use the configuration file to determine the elements linked to the object (spare us from altering the arguments of the addDatasetFile method
+        print("end uploadTestFiles")

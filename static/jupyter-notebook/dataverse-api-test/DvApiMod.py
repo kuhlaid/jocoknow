@@ -31,7 +31,7 @@ class ObjDvApi:
         
     
     # @title Create a new Dataverse collection (which is the same thing as creating a new Dataverse)
-    def createCollection(self):
+    def createCollection(self) -> None:
         print("start createCollection")
         strApiEndpoint = '%s/api/dataverses/%s' % (self.strDATAVERSE_DOMAIN, self.strDATAVERSE_PARENT_COLLECTION)
         print('making request: %s' % strApiEndpoint)
@@ -116,26 +116,29 @@ class ObjDvApi:
 
     
     # @title Upload a file to a dataset
-    def addDatasetFile(self, strFileName, strLocalFilePath, strDataDescription, strDvDirectoryLabel, lstCatgories):
+    # @arguments objFile=JSON object defining the file for upload
+    def addDatasetFile(self, objFile):
         # self.checkFileForUpload(strFileName,self.getWorkDirForPath(strLocalFilePath))  # check that we are ready for upload
-        if (self.blnUploadFile):
-            # --------------------------------------------------
-            # Using a "jsonData" parameter, add optional description + file tags
-            # --------------------------------------------------
-            params = dict(description=strDataDescription,
-                        directoryLabel=strDvDirectoryLabel,
-                        fileName=strFileName,
-                        forceReplace="true",
-                        categories=lstCatgories)
-            print("uploadFileToDv:",strFileName,params)
-            params_as_json_string = json.dumps(params)
-            payload = dict(jsonData=params_as_json_string)
+        print(objFile)
+        
+        # if (self.blnUploadFile):
+        #     # --------------------------------------------------
+        #     # Using a "jsonData" parameter, add optional description + file tags
+        #     # --------------------------------------------------
+        #     params = dict(description=objFile["strDataDescription"],
+        #                 directoryLabel=objFile["strDirectoryLabel"],
+        #                 fileName=objFile["strFileName"],
+        #                 forceReplace="true",
+        #                 categories=objFile["lstCatgories"])
+        #     print("uploadFileToDv:",objFile["strFileName"],params)
+        #     params_as_json_string = json.dumps(params)
+        #     payload = dict(jsonData=params_as_json_string)
     
-            fileobj = open(os.path.join(strLocalFilePath,strFileName), 'rb')  # read the file
-            objFile = {'file': (strFileName, fileobj)}   # we have the new file object to save to the Dataverse
-            print('making request: %s' % self.strDvUrlPersistentId)
-            r = requests.post(self.strDvUrlPersistentId, data=payload, files=objFile)
-            self.printResponseInfo(r)
+        #     fileobj = open(os.path.join(objFile["strUploadPath"],objFile["strFileName"]), 'rb')  # read the file
+        #     objFilePost = {'file': (objFile["strFileName"], fileobj)}   # we have the new file object to save to the Dataverse
+        #     print('making request: %s' % strDvUrlPersistentId)
+        #     r = requests.post(strDvUrlPersistentId, data=payload, files=objFilePost)
+        #     self.printResponseInfo(r)
         print("--end uploadFileToDv--")
 
     
