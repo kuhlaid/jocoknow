@@ -29,7 +29,7 @@ const config = {
   },
 
   // trying https://github.com/cmfcmf/docusaurus-search-local
-  plugins: ["@cmfcmf/docusaurus-search-local"],
+  // plugins: ["@cmfcmf/docusaurus-search-local"],
 
   // waiting on fix for https://github.com/askorama/orama/issues/728 before adding search capabilities
   // plugins: ["@orama/plugin-docusaurus-v3"],
@@ -47,7 +47,9 @@ const config = {
   //     },
   //   ],
   // ],
-
+  plugins: [
+    require.resolve('@cmfcmf/docusaurus-search-local')
+  ],
   presets: [
     [
       'classic',
