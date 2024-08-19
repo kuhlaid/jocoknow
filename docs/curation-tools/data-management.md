@@ -16,8 +16,8 @@ For our project we will be using text-based files for disseminating most of our 
 
 ## Metadata
 
-Metadata is information that describes a set of data. Data repositories generally define metadata as a small overview subset of descriptive information for a set of data, and do not support more detailed descriptive metadata for working with the data. We dig deeper and present a much richer set of metadata, described under the [README.json](data-dictionary.md#readmejson) section of this guide.
+Metadata is information that describes a set of data. Data repositories generally define metadata as a small overview subset of descriptive information for a set of data, and do not support more detailed descriptive metadata for working with the data. We dig deeper and present a much richer set of metadata, described under the [README.json](data-dictionary.md#readmejson-metadata) section of this guide.
 
 ## Schemas and validation
 
-If you follow the links to [schemas](data-dictionary.md#schemas) and [validation](data-dictionary.md#validation) you will learn how these processes relate to our [README.json](data-dictionary.md#readmejson) file.
+If you follow the links to [schemas](data-dictionary.md#schemas) and [validation](data-dictionary.md#validation) you will learn how these processes relate to our [README.json](data-dictionary.md#readmejson-metadata) file.

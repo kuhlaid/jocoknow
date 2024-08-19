@@ -36,7 +36,7 @@ In general data is likely reviewed by the repository every 10 years at the least
 
 Many open repositories such as Dataverse have no way of linking data from datasets together. For instance, if you are only interested in finding datasets with variables for `height` or `weight`, there is no way for the dataset search to look in the dataset files to find those variables. The only searchable components of the dataset are the general descriptions of the dataset such as dataset title, general description, dataset tags, etc. There is no way to expand the dataset metadata to include the data dictionary, so we can search on the data dictionary data.
 
-See [supercharge data access](supercharge-access.md) for a solution to this data dictionary search problem.
+See [supercharge data access](/docs/curation-tools/supercharge-access.md) for a solution to this data dictionary search problem.
 
 ## Advisory board
 
@@ -44,4 +44,4 @@ To complement the CURATED checklist, there needs to be a clear group of individu
 
 ## Data deposit
 
-Now we will get into how to initialize a dataset in Dataverse using the API and Python scripts. In the [README.json](data-dictionary.md#readmejson) section where we described the data dictionary, now we will see how the metadata used to create our dataset.
+Now we will get into how to initialize a dataset in Dataverse using the API and Python scripts. In the [README.json](/docs/curation-tools/data-dictionary.md#readmejson-metadata) section where we described the data dictionary, now we will see how the metadata used to create our dataset.

@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.0.1] - future
+## [0.0.2] - future
 
 - [ ] add Algolia search once the site is production ready
 - [ ] `cmfcmf/docusaurus-search-local` search plugin needs better configuration
@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ ] add resources for developing data management plan (https://dmponline.dcc.ac.uk/) and data curation logs
 - [ ] add a template for logging data curation steps
 - [ ] need to add 'levels' to the docs/intro document and make it more user-friendly
+- [ ] create python packages for handling basic API functions 
 
 ## [0.0.1] - Aug. 13, 2024
 
