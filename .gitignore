@@ -22,9 +22,3 @@ yarn-error.log*
 jocoknow.config.json
 
 .yarn
-# static/jupyter-notebook/
-static/jupyter-notebook/dataverse-api-test/.ipynb_checkpoints
-static/jupyter-notebook/dataverse-api-test/_config_dataverseTest.json
-static/jupyter-notebook/dataverse-api-test/_config_DvApi.json
-static/jupyter-notebook/dataverse-api-test/uploads
-static/jupyter-notebook/dataverse-api-test/__pycache__
