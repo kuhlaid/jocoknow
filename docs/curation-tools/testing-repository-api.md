@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 # Testing our technology
@@ -8,4 +8,4 @@ When beginning this project we needed to consider the technologies used in the i
 
 ## Reviewing the repository API
 
-One of the requirements we set in choosing a data repository, was ensuring the data deposit and retrieval could be automated efficiently. We created a Jupyter notebook with Python scripts to test the API endpoints we would be using.
+One of the requirements we set in choosing a data repository was ensuring the data deposit and retrieval could be automated efficiently. We created a Jupyter notebook with Python scripts to test the API endpoints we would be using (https://github.com/kuhlaid/dv-api-test).

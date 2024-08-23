@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 ---
-
+  
 # Data dictionaries
 
 A data dictionary is usually the last thing on a researchers mind when publishing data. Not only because there are few data collecting platforms that take data dictionaries into consideration as output for a data collection instrument, but they are not standardized. And the only reason you need a data dictionary is if you need someone else to understand your data. When you are beginning data collection you are the creator of your data instrument, so you know what you are collecting. But when the data is finally retrieved from instrument, do all of your variable names look like Q1, Q3, Q34? What do those names represent?
@@ -14,7 +14,7 @@ Since 1986, the Unified Medical Language System (UMLS) has sought to help comput
 
 ## README.json metadata
 
-Data curators should really have one metadata file to describe their dataset and that metadata is best stored in JSON format. Below is an example of the README object for a dataset, and the file will be named `README.json` for consistency. This file will contain the metadata (data dictionary included) for the dataset and is formatted using JSON (https://www.json.org/). JSON is preferred because it is simple formatted text that we can easily work with it in our scripts. We will import this file in a Jupyter notebook to provide users (which you can read more about under the [Juptyer notebook section](jupyter-notebook.md) of our guides).
+Data curators should have a metadata file to describe their dataset and that metadata is best stored in JSON format. Below is an example of the README object for a dataset, and the file will be named `README.json` for consistency. This file will contain the metadata (data dictionary included) for the dataset and is formatted using JSON (https://www.json.org/). JSON is preferred because it is simple formatted text that we can easily work with in our scripts. We will import this file into a Jupyter notebook to provide users with the data descriptors to validate the data (which you can read more about under the [Juptyer notebook section](jupyter-notebook.md) of our guides).
 
 The purpose of this file is to allow researchers to either read or query this file to gain a general understanding of the dataset and contents without needing to download the data and analyze it. **NOTE: we are not adding every possible property someone can come up with for this object, but only the properties that are most useful to our end-users.**
 
