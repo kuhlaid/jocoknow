@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ ] add resources for developing data management plan (https://dmponline.dcc.ac.uk/) and data curation logs
 - [ ] add a template for logging data curation steps
 - [ ] need to add 'levels' to the docs/intro document and make it more user-friendly
+- [ ] update `intro` document with links and more information
 - [ ] create python packages for handling basic API functions 
 - [x] added cheerio resolutions to the package.json file to correct an issue with local search
 - [x] adding additional documentation for a data curation checklist and steps to help automate a curation log

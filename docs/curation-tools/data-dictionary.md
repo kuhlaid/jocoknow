@@ -38,7 +38,7 @@ The following is the content of a `README.json` file which describes properties 
 
 ```s JSON
 {
-    "about": "This file describes the metadata of our dataset. We have provided a complimentary Jupyter notebook that parses this metadata into sections, tables, and figures that can be quickly read to undertand the dataset.",
+    "about": "This document describes our dataset and can be thought of as the database for understanding our data. We recommend reviewing the Jupyter notebook `notebook.ipynb` file that accompanies this dataset. The notebook parses this file into sections, tables, and figures that can be quickly read to undertand the dataset.",
     "metadata": {
         "title": "Development of an AI/ML-ready knee ultrasound dataset in a population-based cohort",
         "description": "<h1>About this data</h1>An ultrasound dataset to use in the discovery of ultrasound features associated with pain and radiographic change in KOA is highly innovative and will be a major step forward for the field. These ultrasound images originate from the diverse and inclusive population-based Johnston County Health Study (JoCoHS). This dataset is designed to adhere to FAIR principles and was funded in part by an Administrative Supplement to Improve the AI/ML-Readiness of NIH-Supported Data (3R01AR077060-03S1).",

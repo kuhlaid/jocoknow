@@ -73,7 +73,8 @@ In this step we secure the dataset by inventorying and reviewing the contents, a
   - [ ] Needs work  
   - [ ] If missing, document for the "Request" step 
 - [ ] Check whether human subject data (data about humans regardless of IRB determination) is present. If so, 
-  - [ ] Request consent form / participation agreement if not present If the data are not de-identified, document for the "Request" step.
+  - [ ] Request consent form / participation agreement if not present 
+  - [ ] If the data are not de-identified, document for the "Request" step.
 - [ ] Check the accessibility of all files 
   - [ ] Ensure there are robust descriptions in plain text of data files and any images.  
 - [ ] Check whether any visualization(s) of data are easily accessible 
@@ -253,11 +254,20 @@ In this step, consider the file formats in the dataset to make them more interop
 
 ### Key Ethical Considerations
 
-Consider how best to navigate researcher bandwidth limitations and ownership of data with repository commitments to reducing barriers to reuse. Decide how to balance the potential benefits of transformation with the risks of mistakes and loss of content/context, especially if the curator or repository will be performing transformation. Document the decision.
+- Consider how best to navigate researcher bandwidth limitations and ownership of data with repository commitments to reducing barriers to reuse. 
+- Decide how to balance the potential benefits of transformation with the risks of mistakes and loss of content/context, especially if the curator or repository will be performing transformation. Document the decision.
 
 ### Essential Tasks
 
-Check whether preferred file formats are in use If not, recommend conversion Retain original formats Check whether software needed is readily available Suggest open source options, if applicable and appropriate Ensure software and software version is documented  Convert any data visualization(s) that are not accessible (e.g., R [visualizations](https://github.com/DataCurationNetwork/data-primers/blob/master/R%20Data%20Curation%20Primer/R-data-curation-primer.md#accessibility-considerations), which need to be converted for screen reader use, or visualizations that do not meet color contrast guidelines) Reorganize files as appropriate  Standardize file names  Record any transformations in Curator Log
+- [ ] Check whether preferred file formats are in use 
+  - [ ] If not, recommend conversion 
+  - [ ] Retain original formats 
+- [ ] Check whether software needed is readily available 
+  - [ ] Suggest open source options, if applicable and appropriate 
+  - [ ] Ensure software and software version is documented  
+- [ ] Convert any data visualization(s) that are not accessible (e.g., R [visualizations](https://github.com/DataCurationNetwork/data-primers/blob/master/R%20Data%20Curation%20Primer/R-data-curation-primer.md#accessibility-considerations), which need to be converted for screen reader use, or visualizations that do not meet color contrast guidelines) Reorganize files as appropriate  
+- [ ] Standardize file names  
+- [ ] Record any transformations in Curator Log
 
 :::
 
