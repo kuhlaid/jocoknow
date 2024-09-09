@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Jupyter notebooks
 
-This is likely the best tool to have in your data curation toolbox. A Jupyter notebook is not only the visual eye candy for representing your metadata, but it provides you with the tools to download and work with much of the data. This is significant because we can run data analyses from within the notebook and save the results and notes from those analyses within a single file. The best thing about these notebooks is they are JSON formatted (you will notice we talk at great lengths about JSON in this guide). In this knowledge guide we will provide you with examples and demonstrate the power of these notebooks.
+This is likely the best tool to have in your data curation toolbox. A Jupyter notebook is not only the visual eye candy for representing your metadata, but it provides you with the tools to download and work with much of the data. This is significant because we can run data analyses from within the notebook and save the results and notes from those analyses within a single file. The best thing about these notebooks is they are JSON formatted (you will notice we talk at great lengths about JSON in this guide). In this user guide we will provide you with examples and demonstrate the power of these notebooks.
 
 ## Best practices
 
@@ -24,3 +24,7 @@ This process will take the DCN curation checklist to the next level for research
 
 Once our data curation steps have reached the deposit stage, we will use a Juptyer notebook to import the data into the repository.
 Since our metadata schema and notebook scripts are reusable across datasets, the notebook provides an easy way to transfer and validate files in a consistent process. Once data is published to the repository, the end-users will have their own Jupyter notebook provided to them to retrieve and review the dataset quickly and easily.
+
+### Documentation export
+
+Many times a Jupyter notebook is useful in a static state for documentation purposes after the scripts have been run and the output (charts, tables, etc.) have been generated in the notebook. Using JupyterLab (or other Jupyter editor) a notebook can be exported to plain Markdown. This allows for easy cloning of a notebook into a document to add into a Docusaurus user guide for instance.

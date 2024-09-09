@@ -14,7 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ ] add a template for logging data curation steps
 - [ ] need to add 'levels' to the docs/intro document and make it more user-friendly
 - [ ] update `intro` document with links and more information
-- [ ] create python packages for handling basic API functions 
+- [ ] write instructions for a curation log example using JSON and code to parse the file into Markdown; include methods for adding ToDo items to the log to help encourage users to make use of the log; add ability to include question or checklist types to a curation task **IMPORTANT**
+- [x] create python packages for handling basic API functions
 - [x] added cheerio resolutions to the package.json file to correct an issue with local search
 - [x] adding additional documentation for a data curation checklist and steps to help automate a curation log
 

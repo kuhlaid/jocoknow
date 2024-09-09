@@ -10,7 +10,7 @@ Suggested Citation: Data Curation Network (2022). "CURATE(D) Steps and Checklist
 
 :::
 
-The CURATE(D) steps are a teaching and representation tool. This model is useful for onboarding data curators and orienting researchers preparing to share their data. It serves as a demonstration for the type of work involved in robust data curation, and was created to fit within institution-specific data repository  workflows. Curation may not follow this exact workflow every time, and procedures may differ slightly depending on data needs and institutional processes. Moreover, the CURATE(D) process, while presented sequentially, is not necessarily linear. curation can jump between steps and repeat actions as necessary. Curators using this checklist should review all steps before reaching out to dataset creators in the "R–Request" step.
+The CURATE(D) steps are a teaching and representation tool. This model is useful for onboarding data curators and orienting researchers preparing to share their data. It serves as a demonstration for the type of work involved in robust data curation and was created to fit within institution-specific data repository workflows. Curation may not follow this exact workflow every time, and procedures may differ slightly depending on data needs and institutional processes. Moreover, the CURATE(D) process, while presented sequentially, is not necessarily linear. curation can jump between steps and repeat actions as necessary. Curators using this checklist should review all steps before reaching out to dataset creators in the "R–Request" step.
 
 This checklist also flows from a preceding series of critical appraisal decisions. This includes deciding which data to keep (selection), and where to share data (e.g., is this data in-scope for a particular repository based on a range of factors including local policy and potential for reuse?). 
 
@@ -50,7 +50,7 @@ In this step we secure the dataset by inventorying and reviewing the contents, a
 
 ### Key Ethical Considerations
 
-- Review participant agreement and data use agreements;  examine potential impacts of sharing this data. Consider: 
+- Review participant agreement and data use agreements; examine potential impacts of sharing this data. Consider: 
   - Individuals and communities represented  
   - Representativeness of diverse human populations Protection or endangerment status of species 
   - Geographic locations (e.g., contested boundaries, historical and current political situations) 
@@ -90,11 +90,13 @@ In this step we secure the dataset by inventorying and reviewing the contents, a
 
 :::info[UNDERSTAND Step]
 
-Understand the data (or try to)  In this step, examine the dataset closely to understand what it is, how the files interrelate, and what information is needed to reuse. Common UNDERSTAND steps include: 
+**Understand the data (or try to)**
+
+In this step, examine the dataset closely to understand what it is, how the files interrelate, and what information is needed to reuse. Common UNDERSTAND steps include: 
 
 - Check for quality assurance and usability issues such as missing data, ambiguous headings, code execution failures, and data presentation concerns  
 - Try to detect and extract any "hidden documentation" inherent to the data files that may facilitate reuse or expose unintended information  
-- Determine if the documentation of the data is sufficient for a user with similar qualifications to the researcher's to understand and reuse the data. If not, recommend or create additional documentation (e.g., a README.txt template)
+- Determine if the documentation of the data is sufficient for a user with similar qualifications to the researchers to understand and reuse the data. If not, recommend or create additional documentation (e.g., a README.txt template)
 
 ### Key Ethical Considerations
 
@@ -133,7 +135,7 @@ Understand the data (or try to)  In this step, examine the dataset closely to un
 - [ ] Does the code use absolute paths or relative paths? If absolute paths, is this documented in the README? 
 - [ ] Are packages or additional libraries used? Is so, is this noted with clear use instructions?  
 - [ ] Are any data organized consistently for access by the code? 
-- [ ] Is there an indication of whether the depositor intends reusers to be able to run the code and reproduce results, or just see the process used?  
+- [ ] Is there an indication of whether the depositor intends users to be able to run the code and reproduce results, or just see the process used?  
 
 To view additional UNDERSTAND steps based on format, view the following primers:
 
@@ -159,7 +161,7 @@ To view additional UNDERSTAND steps based on format, view the following primers:
 
 :::info[REQUEST Step]
 
-### Request missing information or changes
+**Request missing information or changes**
 
 In this step, generate a list of questions to help the researcher fix any errors or issues and enrich the usability of the data. Common REQUEST steps include: 
 
@@ -188,7 +190,7 @@ Dear [*name of the data set author or contact*],
 
 Thank you for depositing your data set, [*title of the data set*], to [*name of repository*].  
 
-After we receive a data set, we review it to ensure that the data we host are as complete and understandable as possible. We have reviewed your data set and have the following recommendations for you:  
+After we receive a data set, we review it to ensure that the data we host is as complete and understandable as possible. We have reviewed your data set and have the following recommendations for you:  
 
 - Recommendation #1 
 - Recommendation #2 
@@ -207,7 +209,9 @@ Sincerely,
 
 :::info[AUGMENT Step]
 
-Augment the dataset  In this step we ensure metadata conforms to repository and/or appropriate discipline standards; adjust metadata to improve findability and accessibility; and improve documentation to make data more understandable, interoperable and reusable. Common AUGMENT steps include: 
+**Augment the dataset**
+
+In this step we ensure metadata conforms to repository and/or appropriate discipline standards; adjust metadata to improve findability and accessibility; and improve documentation to make data more understandable, interoperable and reusable. Common AUGMENT steps include: 
 
 - Enhance metadata to best facilitate discoverability, such as by ensuring datasets have a persistent identifier. 
 - Create and apply metadata for the data record, including descriptive keywords 
@@ -216,7 +220,7 @@ Augment the dataset  In this step we ensure metadata conforms to repository and/
 
 ### Key Ethical Considerations
 
-- Make sure bibliographic information reflects correct author attribution. 
+- Make sure bibliographic information reflects the correct author attribution. 
 - Ensure any augmentation by the depositor to resolve ethical questions from previous steps is completed.
 
 ### Essential Tasks
@@ -234,7 +238,7 @@ Augment the dataset  In this step we ensure metadata conforms to repository and/
   - [ ] Add subject terms 
 - [ ] Ensure keywords are sufficient and representative 
 - [ ] Record all changes in the Curation Log 
-- [ ] Provide suggestions to improve accessibility of content (e.g., alt-text or additional descriptions; color contrast; etc)
+- [ ] Provide suggestions to improve accessibility of content (e.g., alt-text or additional descriptions; color contrast; etc.)
 
 :::
 
@@ -275,7 +279,9 @@ In this step, consider the file formats in the dataset to make them more interop
 
 :::info[EVALUATE Step]
 
-Evaluate and rate the dataset  In this step, review the dataset and companion data record against international standards, including FAIR,<sup>[2](#footnote-2)</sup> CARE,<sup>[3](#footnote-2)</sup> and FATE.<sup>[4](#footnote-2)</sup> Common EVALUATE steps: 
+**Evaluate and rate the dataset**
+
+In this step, review the dataset and companion data record against international standards, including FAIR,<sup>[2](#footnote-2)</sup> CARE,<sup>[3](#footnote-2)</sup> and FATE.<sup>[4](#footnote-2)</sup> Common EVALUATE steps: 
 - Score the dataset and recommend ways to increase the FAIRness of the data 
 - Review data for ethical concerns in line with CARE and FATE 
 
@@ -289,7 +295,7 @@ Evaluate and rate the dataset  In this step, review the dataset and companion da
 
 - Final review--remember it is not too late to surface any ethical concerns. 
 - Verify the words/language being used are not racist/harmful. 
-- Remind the submitter of their responsibility, if they choose to ignore requests for de-identification or similar concerns.
+- Remind the submitter of their responsibility if they choose to ignore requests for de-identification or similar concerns.
 
 ### Essential Tasks
 
@@ -326,7 +332,9 @@ Reusable:
 
 :::info[DOCUMENT Step]
 
-Document curation activities throughout    In the Curator Log mentioned throughout this guide, record the significant treatments or actions applied to the dataset. This is for your archival record keeping (distinct from documentation the researcher(s) created to accompany their own datasets). DOCUMENT requires: 
+**Document curation activities throughout**
+
+In the Curator Log mentioned throughout this guide, record the significant treatments or actions applied to the dataset. This is for your archival record keeping (distinct from documentation the researcher(s) created to accompany their own datasets). DOCUMENT requires: 
 - Recording all information relevant to the tracking and administration of the deposit, about who did what to the dataset and when 
 - Tracking communication with the researcher(s)
 

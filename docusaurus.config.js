@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'JoCoKnow',
-  tagline: 'The Knowledgebase Guide to JoCo data',
+  tagline: 'The User Guide to JoCo data',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -85,9 +85,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'The Knowledgebase Guide to JoCo data',
+        title: 'The User Guide to JoCo data',
         logo: {
-          alt: 'The Knowledgebase Guide Logo',
+          alt: 'The User Guide Logo',
           src: 'img/logo.svg',
         },
         items: [

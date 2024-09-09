@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # Data curation template
 
-The following template is base on CURATED checklist from DCN.
+The following template is based on the CURATE(D) checklist from DCN.
 
 :::info[Suggested Citation]
 
@@ -13,18 +13,34 @@ Suggested Citation: Data Curation Network (2022). "CURATE(D) Steps and Checklist
 :::
 
 This template assumes some of the following:
-- Data will be published to an generalist Dataverse Project repository
+- Data will be published to a generalist Dataverse Project repository
 - Text data will be encoded using UTF-8 standard
 - Jupyter notebooks will be used to document the processes of data import and export using the Dataverse API
 
 ## **CHECK Step**
 
 :::info[CHECK Step]
-                  
+
+**Check data files/code and read documentation**  
+
+In this step we secure the dataset by inventorying and reviewing the contents, applying local appraisal and selection criteria. Common CHECK steps include:  
+- Review to ensure data is in scope for the repository 
+- Inventory the contents of the data files (e.g., open and sample the files or code) 
+- Verify all metadata provided by the researcher; check available documentation                                                                       
+
+### Key Ethical Considerations
+
+- Review participant agreement and data use agreements; examine potential impacts of sharing this data. Consider: 
+  - Individuals and communities represented  
+  - Representativeness of diverse human populations Protection or endangerment status of species 
+  - Geographic locations (e.g., contested boundaries, historical and current political situations) 
+  - Animal research ethics and approval 
+- Is it possible that the dataset may impact a specific group? 
+- Does this dataset follow compliance & institutional policy?                                                                                                                                                                 
 ### Essential Tasks
 
 - [ ] Begin Curator Log to track curation decisions 
-- [ ] Compile data collection materials (surveys, paper forms...) 
+- [ ] Open the related article and supporting information if available 
 - [ ] Inventory the dataset 
   - [ ] Identify file formats 
   - [ ] Review file organization, hierarchy, and naming convention(s) 
@@ -37,7 +53,8 @@ This template assumes some of the following:
   - [ ] Needs work  
   - [ ] If missing, document for the "Request" step 
 - [ ] Check whether human subject data (data about humans regardless of IRB determination) is present. If so, 
-  - [ ] Request consent form / participation agreement if not present If the data are not de-identified, document for the "Request" step.
+  - [ ] Request consent form / participation agreement if not present 
+  - [ ] If the data are not de-identified, document for the "Request" step.
 - [ ] Check the accessibility of all files 
   - [ ] Ensure there are robust descriptions in plain text of data files and any images.  
 - [ ] Check whether any visualization(s) of data are easily accessible 
@@ -53,11 +70,13 @@ This template assumes some of the following:
 
 :::info[UNDERSTAND Step]
 
-Understand the data (or try to)  In this step, examine the dataset closely to understand what it is, how the files interrelate, and what information is needed to reuse. Common UNDERSTAND steps include: 
+**Understand the data (or try to)**
+
+In this step, examine the dataset closely to understand what it is, how the files interrelate, and what information is needed to reuse. Common UNDERSTAND steps include: 
 
 - Check for quality assurance and usability issues such as missing data, ambiguous headings, code execution failures, and data presentation concerns  
 - Try to detect and extract any "hidden documentation" inherent to the data files that may facilitate reuse or expose unintended information  
-- Determine if the documentation of the data is sufficient for a user with similar qualifications to the researcher's to understand and reuse the data. If not, recommend or create additional documentation (e.g., a README.txt template)
+- Determine if the documentation of the data is sufficient for a user with similar qualifications to the researchers to understand and reuse the data. If not, recommend or create additional documentation (e.g., a README.txt template)
 
 ### Key Ethical Considerations
 
@@ -96,7 +115,7 @@ Understand the data (or try to)  In this step, examine the dataset closely to un
 - [ ] Does the code use absolute paths or relative paths? If absolute paths, is this documented in the README? 
 - [ ] Are packages or additional libraries used? Is so, is this noted with clear use instructions?  
 - [ ] Are any data organized consistently for access by the code? 
-- [ ] Is there an indication of whether the depositor intends reusers to be able to run the code and reproduce results, or just see the process used?  
+- [ ] Is there an indication of whether the depositor intends users to be able to run the code and reproduce results, or just see the process used?  
 
 To view additional UNDERSTAND steps based on format, view the following primers:
 
@@ -122,7 +141,7 @@ To view additional UNDERSTAND steps based on format, view the following primers:
 
 :::info[REQUEST Step]
 
-### Request missing information or changes
+**Request missing information or changes**
 
 In this step, generate a list of questions to help the researcher fix any errors or issues and enrich the usability of the data. Common REQUEST steps include: 
 
@@ -151,7 +170,7 @@ Dear [*name of the data set author or contact*],
 
 Thank you for depositing your data set, [*title of the data set*], to [*name of repository*].  
 
-After we receive a data set, we review it to ensure that the data we host are as complete and understandable as possible. We have reviewed your data set and have the following recommendations for you:  
+After we receive a data set, we review it to ensure that the data we host is as complete and understandable as possible. We have reviewed your data set and have the following recommendations for you:  
 
 - Recommendation #1 
 - Recommendation #2 
@@ -170,7 +189,9 @@ Sincerely,
 
 :::info[AUGMENT Step]
 
-Augment the dataset  In this step we ensure metadata conforms to repository and/or appropriate discipline standards; adjust metadata to improve findability and accessibility; and improve documentation to make data more understandable, interoperable and reusable. Common AUGMENT steps include: 
+**Augment the dataset**
+
+In this step we ensure metadata conforms to repository and/or appropriate discipline standards; adjust metadata to improve findability and accessibility; and improve documentation to make data more understandable, interoperable and reusable. Common AUGMENT steps include: 
 
 - Enhance metadata to best facilitate discoverability, such as by ensuring datasets have a persistent identifier. 
 - Create and apply metadata for the data record, including descriptive keywords 
@@ -179,7 +200,7 @@ Augment the dataset  In this step we ensure metadata conforms to repository and/
 
 ### Key Ethical Considerations
 
-- Make sure bibliographic information reflects correct author attribution. 
+- Make sure bibliographic information reflects the correct author attribution. 
 - Ensure any augmentation by the depositor to resolve ethical questions from previous steps is completed.
 
 ### Essential Tasks
@@ -197,7 +218,7 @@ Augment the dataset  In this step we ensure metadata conforms to repository and/
   - [ ] Add subject terms 
 - [ ] Ensure keywords are sufficient and representative 
 - [ ] Record all changes in the Curation Log 
-- [ ] Provide suggestions to improve accessibility of content (e.g., alt-text or additional descriptions; color contrast; etc)
+- [ ] Provide suggestions to improve accessibility of content (e.g., alt-text or additional descriptions; color contrast; etc.)
 
 :::
 
@@ -217,11 +238,20 @@ In this step, consider the file formats in the dataset to make them more interop
 
 ### Key Ethical Considerations
 
-Consider how best to navigate researcher bandwidth limitations and ownership of data with repository commitments to reducing barriers to reuse. Decide how to balance the potential benefits of transformation with the risks of mistakes and loss of content/context, especially if the curator or repository will be performing transformation. Document the decision.
+- Consider how best to navigate researcher bandwidth limitations and ownership of data with repository commitments to reducing barriers to reuse. 
+- Decide how to balance the potential benefits of transformation with the risks of mistakes and loss of content/context, especially if the curator or repository will be performing transformation. Document the decision.
 
 ### Essential Tasks
 
-Check whether preferred file formats are in use If not, recommend conversion Retain original formats Check whether software needed is readily available Suggest open source options, if applicable and appropriate Ensure software and software version is documented  Convert any data visualization(s) that are not accessible (e.g., R [visualizations](https://github.com/DataCurationNetwork/data-primers/blob/master/R%20Data%20Curation%20Primer/R-data-curation-primer.md#accessibility-considerations), which need to be converted for screen reader use, or visualizations that do not meet color contrast guidelines) Reorganize files as appropriate  Standardize file names  Record any transformations in Curator Log
+- [ ] Check whether preferred file formats are in use 
+  - [ ] If not, recommend conversion 
+  - [ ] Retain original formats 
+- [ ] Check whether software needed is readily available 
+  - [ ] Suggest open source options, if applicable and appropriate 
+  - [ ] Ensure software and software version is documented  
+- [ ] Convert any data visualization(s) that are not accessible (e.g., R [visualizations](https://github.com/DataCurationNetwork/data-primers/blob/master/R%20Data%20Curation%20Primer/R-data-curation-primer.md#accessibility-considerations), which need to be converted for screen reader use, or visualizations that do not meet color contrast guidelines) Reorganize files as appropriate  
+- [ ] Standardize file names  
+- [ ] Record any transformations in Curator Log
 
 :::
 
@@ -229,7 +259,9 @@ Check whether preferred file formats are in use If not, recommend conversion Ret
 
 :::info[EVALUATE Step]
 
-Evaluate and rate the dataset  In this step, review the dataset and companion data record against international standards, including FAIR,<sup>[2](#footnote-2)</sup> CARE,<sup>[3](#footnote-2)</sup> and FATE.<sup>[4](#footnote-2)</sup> Common EVALUATE steps: 
+**Evaluate and rate the dataset**
+
+In this step, review the dataset and companion data record against international standards, including FAIR,<sup>[2](#footnote-2)</sup> CARE,<sup>[3](#footnote-2)</sup> and FATE.<sup>[4](#footnote-2)</sup> Common EVALUATE steps: 
 - Score the dataset and recommend ways to increase the FAIRness of the data 
 - Review data for ethical concerns in line with CARE and FATE 
 
@@ -243,7 +275,7 @@ Evaluate and rate the dataset  In this step, review the dataset and companion da
 
 - Final review--remember it is not too late to surface any ethical concerns. 
 - Verify the words/language being used are not racist/harmful. 
-- Remind the submitter of their responsibility, if they choose to ignore requests for de-identification or similar concerns.
+- Remind the submitter of their responsibility if they choose to ignore requests for de-identification or similar concerns.
 
 ### Essential Tasks
 
@@ -280,7 +312,9 @@ Reusable:
 
 :::info[DOCUMENT Step]
 
-Document curation activities throughout    In the Curator Log mentioned throughout this guide, record the significant treatments or actions applied to the dataset. This is for your archival record keeping (distinct from documentation the researcher(s) created to accompany their own datasets). DOCUMENT requires: 
+**Document curation activities throughout**
+
+In the Curator Log mentioned throughout this guide, record the significant treatments or actions applied to the dataset. This is for your archival record keeping (distinct from documentation the researcher(s) created to accompany their own datasets). DOCUMENT requires: 
 - Recording all information relevant to the tracking and administration of the deposit, about who did what to the dataset and when 
 - Tracking communication with the researcher(s)
 
