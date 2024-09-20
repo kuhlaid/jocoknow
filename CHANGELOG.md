@@ -5,16 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.0.2] - future
 
-- [ ] add Algolia search once the site is production ready
-- [ ] `cmfcmf/docusaurus-search-local` search plugin needs better configuration
-- [ ] local search linking to pages such as `https://jocoknow.vercel.app/docs/jocoknow-extras/translate-your-site/docs/jocoknow-extras/translate-your-site#translate-a-doc` which do not exist
-- [ ] add resources for developing data management plan (https://dmponline.dcc.ac.uk/) and data curation logs
-- [ ] add a template for logging data curation steps
-- [ ] need to add 'levels' to the docs/intro document and make it more user-friendly
-- [ ] update `intro` document with links and more information
-- [ ] write instructions for a curation log example using JSON and code to parse the file into Markdown; include methods for adding ToDo items to the log to help encourage users to make use of the log; add ability to include question or checklist types to a curation task **IMPORTANT**
+## [1.0.0] - Sept. 20, 2024
+
+- [x] update `intro` document with links and more information
+- [x] removed default Docusaurus styling
 - [x] create python packages for handling basic API functions
 - [x] added cheerio resolutions to the package.json file to correct an issue with local search
 - [x] adding additional documentation for a data curation checklist and steps to help automate a curation log
@@ -26,4 +21,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [x] updated Docusaurus to version 3.5.2
 - [x] testing orama search plugin, but both the local and cloud version have an error needing to be fixed in https://github.com/askorama/orama/issues/728
 - [x] testing DocSearch crawler https://docsearch.algolia.com/docs/legacy/run-your-own/#run-the-crawl-from-the-docker-image and setting up an .env.prod set of environment variables, but it keeps throwing `Unreachable hosts` error
-- [x] adding a basic `cmfcmf/docusaurus-search-local` search plugin (needs configuration changes but is a good starter)
+- [x] adding a basic `cmfcmf/docusaurus-search-local` search plugin (needs configuration changes but is a good starter search tool)
+
+## [x.x.x] - future ideas
+
+- [ ] write instructions on how to link this documentation site builder with the Jupyter notebooks used for dataset curation to publish the curation logs to this site under dataset specific directories/pages (using shutil commands to copy files from the notebook directories to this site builder)
+- [ ] add Algolia search once the site is production ready and write up a document regarding how users can best search for data
+- [ ] write a document which contains the code and resources to build a curation log generator and how it compares to the curation log for https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SKP9IB
+- [ ] `cmfcmf/docusaurus-search-local` search plugin needs better configuration
+- [ ] local search linking to pages such as `https://jocoknow.vercel.app/docs/jocoknow-extras/translate-your-site/docs/jocoknow-extras/translate-your-site#translate-a-doc` which do not exist
+- [ ] add resources for developing data management plan (https://dmponline.dcc.ac.uk/) and data curation logs
+- [ ] add a template for logging data curation steps
+- [ ] write instructions for a curation log example using JSON and code to parse the file into Markdown; include methods for adding ToDo items to the log to help encourage users to make use of the log; add ability to include question or checklist types to a curation task **IMPORTANT**
+- [ ] try to query the Dataverse API to retrieve a list of datasets to help autogenerate a dataset listing README file that links to the individual README files of each dataset (remove dataset category JSON and replace with this)

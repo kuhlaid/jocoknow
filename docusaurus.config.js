@@ -83,21 +83,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.png',
       navbar: {
         title: 'The User Guide to JoCo data',
         logo: {
           alt: 'The User Guide Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Support',
+            label: 'README',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/kuhlaid/jocoknow',
             label: 'GitHub',
@@ -112,7 +112,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Read the User Guide',
                 to: '/docs/intro',
               },
             ],
@@ -121,8 +121,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'FAQ',
-                to: '/blog',
+                label: 'Contact Us',
+                to: '/docs/contact',
               }
             ],
           },

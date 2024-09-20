@@ -109,12 +109,13 @@ In this step, examine the dataset closely to understand what it is, how the file
 - [ ] Examine files, organization, and documentation more thoroughly. 
   - [ ] Are there changes that could enhance the dataset? 
   - [ ] Are there missing data? 
-  - [ ] Could a user with similar qualifications to the author's understand and reuse these data and reproduce the results? Are the data, documentation and/or metadata presented in a way that aids in interpretation? (e.g., [README Example](https://deepblue.lib.umich.edu/data/Deep\_Blue\_Data\_Example\_Readme.txt)) 
+  - [ ] Could a user with similar qualifications to the author's understand and reuse these data and reproduce the results? 
+  - [ ] Are the data, documentation and/or metadata presented in a way that aids in interpretation? (e.g., [README Example](https://deepblue.lib.umich.edu/data/Deep\_Blue\_Data\_Example\_Readme.txt)) 
 - [ ] Record all questions and concerns in Curation Log.  
 
 *Tasks vary based on file formats and subject domain. Sample tasks based on format:* 
 
-**Tabular Data (e.g, Microsoft Excel) Questions:**
+**Tabular Data (e.g. Microsoft Excel) Questions:**
 
 - [ ] Check the organization of the data–is it well-structured? 
 - [ ] Are headers/codes clearly defined? 
@@ -133,8 +134,8 @@ In this step, examine the dataset closely to understand what it is, how the file
 - [ ] Is the code commented, i.e., did the author provide descriptive information on sections of code? 
 - [ ] Is data for input missing? Are environmental conditions and parameters noted? Is it clear which language(s) and version(s) are used? 
 - [ ] Does the code use absolute paths or relative paths? If absolute paths, is this documented in the README? 
-- [ ] Are packages or additional libraries used? Is so, is this noted with clear use instructions?  
-- [ ] Are any data organized consistently for access by the code? 
+- [ ] Are packages or additional libraries used? I so, is this noted with clear use instructions?  
+- [ ] Is data organized consistently for access by the code? 
 - [ ] Is there an indication of whether the depositor intends users to be able to run the code and reproduce results, or just see the process used?  
 
 To view additional UNDERSTAND steps based on format, view the following primers:
@@ -238,7 +239,7 @@ In this step we ensure metadata conforms to repository and/or appropriate discip
   - [ ] Add subject terms 
 - [ ] Ensure keywords are sufficient and representative 
 - [ ] Record all changes in the Curation Log 
-- [ ] Provide suggestions to improve accessibility of content (e.g., alt-text or additional descriptions; color contrast; etc.)
+- [ ] Provide suggestions to improve accessibility of content (e.g., alt-text or additional descriptions, color contrast, etc.)
 
 :::
 
@@ -249,7 +250,7 @@ In this step we ensure metadata conforms to repository and/or appropriate discip
 In this step, consider the file formats in the dataset to make them more interoperable, reusable, preservation friendly, and non-proprietary when possible.<sup>[1](#footnote-1)</sup> Common TRANSFORM steps include: 
 
 - Identify specialized file formats and their restrictions (e.g., Is the software freely available? If so, link to it or archive it alongside the data)  
-- Propose open source or more reusable formats when appropriate 
+- Propose open-source or more reusable formats when appropriate 
 - Retain original file formats 
 
 #### Footnote 1
@@ -267,7 +268,7 @@ In this step, consider the file formats in the dataset to make them more interop
   - [ ] If not, recommend conversion 
   - [ ] Retain original formats 
 - [ ] Check whether software needed is readily available 
-  - [ ] Suggest open source options, if applicable and appropriate 
+  - [ ] Suggest open-source options, if applicable and appropriate 
   - [ ] Ensure software and software version is documented  
 - [ ] Convert any data visualization(s) that are not accessible (e.g., R [visualizations](https://github.com/DataCurationNetwork/data-primers/blob/master/R%20Data%20Curation%20Primer/R-data-curation-primer.md#accessibility-considerations), which need to be converted for screen reader use, or visualizations that do not meet color contrast guidelines) Reorganize files as appropriate  
 - [ ] Standardize file names  
@@ -294,7 +295,7 @@ In this step, review the dataset and companion data record against international
 ### Key Ethical Considerations
 
 - Final review--remember it is not too late to surface any ethical concerns. 
-- Verify the words/language being used are not racist/harmful. 
+- Verify you are not using racist/harmful words/language. 
 - Remind the submitter of their responsibility if they choose to ignore requests for de-identification or similar concerns.
 
 ### Essential Tasks
