@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Contact Us
 
 Use the form below to submit any questions you may have regarding the JoCo data or would like to leave us suggestions and feedback.

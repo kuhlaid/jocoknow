@@ -29,7 +29,7 @@ For me, I open a WSL command and paste the following command to ensure I am in t
 
 Use Yarn via https://yarnpkg.com/getting-started/install. When adding something like a search module to the package.json script, run `yarn up` to update the packages or `yarn add` to add a package.
 
-To run the build first run `yarn build` then `yarn run serve` (this is ideal because it builds the site search locally).
+To run the build first run `yarn run build` then `yarn run serve` (this is ideal because it builds the site search locally).
 
 ## DocSearch scrapper (DOES NOT WORK even though everything looks like it configured correctly)
 
@@ -44,4 +44,19 @@ the `Search-Only API Key` and copy that to our environment file.
 Here we will use the `.env.prod` file to define our APPLICATION_ID and API_KEY
 `docker run -it --env-file=.env.prod -e "CONFIG=$(cat jocoknow.config.json | jq -r tostring)" algolia/docsearch-scraper`
 
+Prop up on OpenShift
 
+```
+oc new-app "https://github.com/kuhlaid/jocoknow.git" \
+--image-stream="openshift/nodejs:latest" \
+--name jocoknow \
+--build-env-file=".env.prod" \
+--env-file=".env.prod"
+```
+
+Create OpenShift route
+
+// create a non-shibboleth secure route (note if you create a shibboleth route then you should remove this route)
+`oc create route edge --service=jocoknow --insecure-policy=Redirect`
+
+`oc delete all --selector app=jocoknow`

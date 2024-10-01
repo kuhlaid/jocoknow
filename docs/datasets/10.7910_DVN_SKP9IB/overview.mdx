@@ -1,7 +1,19 @@
+---
+sidebar_position: 1
+---
+
+import TOCInline from '@theme/TOCInline';
 
 # README
 
-This document aims to present the dataset in a format that is easily understandable for you, helping you gain insight into the dataset's contents.
+:::info[TOC]
+This document provides a summary of the dataset contents:
+<TOCInline
+  toc={toc.filter((node) => node.level === 2)}
+  minHeadingLevel={2}
+  maxHeadingLevel={2}
+/>
+:::
 
 ## Citation metadata
 
@@ -42,7 +54,7 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-> **dsDescriptionValue:** <h2>To begin learning about this dataset, visit our <a href='https://jocoknow.vercel.app/docs/datasets/10.7910_DVN_SKP9IB/' target='_blank'>User Guide</a> for an all-in-one document containing statistics and other details to help you work with the data.</h2>
+> **dsDescriptionValue:** <h2>To begin learning about this dataset, visit our <a href='https://jocoknow.vercel.app/docs/datasets/10.7910_DVN_SKP9IB/overview.mdx' target='_blank'>User Guide</a> for an all-in-one document containing statistics and other details to help you work with the data.</h2>
 
 
 
@@ -149,7 +161,11 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-## Datatable preview for dataTable.SUBJECT.csv
+
+## File dataTable.SUBJECT.csv
+
+### Preview
+
 
 
 
@@ -163,11 +179,181 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-## General statistics for file dataTable.SUBJECT.csv
+
+### Variable descriptions
+
+```json
+[
+   {
+      "name": "E03SUBJECTID",
+      "label": "A unique identifier for a subject in a study.",
+      "value": {
+         "format": "Universal Unique Identifier (UUID version 1) generated according to RFC 4122",
+         "dataType": "object",
+         "unique": "True"
+      },
+      "identifier": "True",
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C69256"
+         ]
+      }
+   },
+   {
+      "name": "E03GENDER",
+      "label": "What was your gender at birth?",
+      "value": {
+         "format": "categorical",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "1": "Male",
+            "2": "Female"
+         }
+      },
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C164527"
+         ]
+      }
+   },
+   {
+      "name": "E03PASKR",
+      "surveyQuestion": "On MOST days of ANY ONE MONTH in the LAST 12 MONTHS did you have pain, aching, or stiffness in any of the following? Please rate as none, mild, moderate, or severe. - Right - Knee",
+      "label": "Right Knee - pain, aching, or stiffness",
+      "source": "Qualtrics survey (1h2J)",
+      "value": {
+         "format": "categorical",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "0": "None",
+            "1": "Mild",
+            "2": "Moderate",
+            "3": "Severe",
+            "888": "No response"
+         }
+      },
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C125625",
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C125623",
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C105779",
+            "https://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.96&code=249913002",
+            "https://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.96&code=30989003"
+         ]
+      }
+   },
+   {
+      "name": "E03PASKL",
+      "surveyQuestion": "On MOST days of ANY ONE MONTH in the LAST 12 MONTHS did you have pain, aching, or stiffness in any of the following? Please rate as none, mild, moderate, or severe. - Left - Knee",
+      "label": "Left Knee - pain, aching, or stiffness",
+      "source": "Qualtrics survey (1h2J)",
+      "value": {
+         "format": "categorical",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "0": "None",
+            "1": "Mild",
+            "2": "Moderate",
+            "3": "Severe",
+            "888": "No response"
+         }
+      },
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C125625",
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C125623",
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C105779",
+            "https://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.96&code=249913002",
+            "https://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.96&code=30989003"
+         ]
+      }
+   },
+   {
+      "name": "E03RADRPAKKL",
+      "label": "Kellgren-Lawrence (KL) Grade read from right PA knee radiograph",
+      "value": {
+         "format": "categorical",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "0": "No OA",
+            "1": "Questionable OA",
+            "2": "Mild OA",
+            "3": "Moderate OA",
+            "4": "Severe OA",
+            "9": "Non OA",
+            "88": "Not read",
+            "99": "Total joint replacement"
+         }
+      },
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C115514"
+         ]
+      }
+   },
+   {
+      "name": "E03RADLPAKKL",
+      "label": "Kellgren-Lawrence (KL) Grade read from left PA knee radiograph",
+      "value": {
+         "format": "categorical",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "0": "No OA",
+            "1": "Questionable OA",
+            "2": "Mild OA",
+            "3": "Moderate OA",
+            "4": "Severe OA",
+            "9": "Non OA",
+            "88": "Not read",
+            "99": "Total joint replacement"
+         }
+      },
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C115514"
+         ]
+      }
+   },
+   {
+      "name": "E03AGE",
+      "label": "Age range (in years) at time of JoCoHS enrollment",
+      "value": {
+         "format": "categorical",
+         "unitOfMeasure": "year",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "1": "35-39",
+            "2": "40-44",
+            "3": "45-49",
+            "4": "50-54",
+            "5": "55-59",
+            "6": "60-64",
+            "7": "65-70"
+         }
+      },
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C69260"
+         ]
+      }
+   }
+]
+```
 
 
 
-### E03GENDER
+
+### General statistics
+
+
+
+#### E03GENDER
 
 
 
@@ -178,7 +364,7 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-### E03PASKR
+#### E03PASKR
 
 
 
@@ -192,7 +378,7 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-### E03PASKL
+#### E03PASKL
 
 
 
@@ -206,7 +392,7 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-### E03RADRPAKKL
+#### E03RADRPAKKL
 
 
 
@@ -221,7 +407,7 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-### E03RADLPAKKL
+#### E03RADLPAKKL
 
 
 
@@ -236,7 +422,7 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-### E03AGE
+#### E03AGE
 
 
 
@@ -252,7 +438,11 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-## Datatable preview for dataTable.IMAGE_REF.csv
+
+## File dataTable.IMAGE_REF.csv
+
+### Preview
+
 
 
 
@@ -266,11 +456,112 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-## General statistics for file dataTable.IMAGE_REF.csv
+
+### Variable descriptions
+
+```json
+[
+   {
+      "name": "E03SUBJECTID",
+      "label": "A unique identifier for a subject in a study.",
+      "value": {
+         "format": "Universal Unique Identifier (UUID version 1) generated according to RFC 4122",
+         "dataType": "object",
+         "unique": "True"
+      },
+      "identifier": "True",
+      "ontology": {
+         "source": [
+            "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C69256"
+         ]
+      }
+   },
+   {
+      "name": "E03USIMGT",
+      "label": "Knee ultrasound image type",
+      "value": {
+         "format": "categorical",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "11": "Right SUPRAPAT LONG",
+            "12": "Right SUPRAPAT LONG CPD",
+            "13": "Right SUPRAPAT TRANS 30",
+            "14": "Right MED LONG",
+            "15": "Right LAT LONG",
+            "16": "Right SUPRAPAT TRANS FLEX",
+            "17": "Right POST TRANS",
+            "21": "Left SUPRAPAT LONG",
+            "22": "Left SUPRAPAT LONG CPD",
+            "23": "Left SUPRAPAT TRANS 30",
+            "24": "Left MED LONG",
+            "25": "Left LAT LONG",
+            "26": "Left SUPRAPAT TRANS FLEX",
+            "27": "Left POST TRANS"
+         }
+      },
+      "identifier": "False",
+      "ontology": {
+         "source": [
+            "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C32221"
+         ]
+      }
+   },
+   {
+      "name": "E03USIMGF",
+      "label": "Ultrasound image file name",
+      "fileFormat": "PNG",
+      "value": {
+         "format": "Each filename contains the E03SUBJECTID and E03USIMGT value in the form of E03SUBJECTID+'_'+E03USIMGT+'.png'",
+         "dataType": "string (42 character)"
+      },
+      "identifier": "False",
+      "ontology": {
+         "source": [
+            "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C171191"
+         ]
+      }
+   },
+   {
+      "name": "E03USIMGZ",
+      "label": "Ultrasound image file size in bytes",
+      "value": {
+         "format": "Int64",
+         "unitOfMeasure": "byte",
+         "dataType": "Int64"
+      },
+      "identifier": "False"
+   },
+   {
+      "name": "E03USIMGD",
+      "label": "Knee imaged (left or right knee)",
+      "value": {
+         "format": "categorical",
+         "dataType": "Int64",
+         "unique": "False",
+         "category": {
+            "1": "Right",
+            "2": "Left"
+         }
+      },
+      "identifier": "False",
+      "ontology": {
+         "source": [
+            "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25306"
+         ]
+      }
+   }
+]
+```
 
 
 
-### E03USIMGT
+
+### General statistics
+
+
+
+#### E03USIMGT
 
 
 
@@ -293,7 +584,7 @@ This document aims to present the dataset in a format that is easily understanda
 
 
 
-### E03USIMGD
+#### E03USIMGD
 
 
 
@@ -301,3 +592,10 @@ This document aims to present the dataset in a format that is easily understanda
 |---:|:-----------|---------:|
 |  0 | Right      |     6034 |
 |  1 | Left       |     6029 |
+
+
+---
+
+The purpose of this notebook is to provide documentation for this dataset. The methods used in this notebook allow for an automated approach to generate human-readable documentation for a dataset during the data curation process.
+
+**DISCLAIMER: To use the code from this notebook in your own projects, you will need to learn the basics of Jupyter notebooks and understand Python scripting since the code for this notebook utilizes the Python programming language. Any changes you make to the notebook or Python code can cause the notebook to not function as designed. The code and this environment may become deprecated at some point in time and may no longer function as originally designed. Also, the code and instructions included here are NOT the only way to work with data from our datasets. Only some of the most useful code examples are included, and as with any code, there are many ways to achieve similar results.**

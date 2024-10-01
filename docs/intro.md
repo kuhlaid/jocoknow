@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Getting Started
 
 What are you interested in learning?
@@ -11,7 +7,7 @@ What are you interested in learning?
 I am new to the JoCo studies and would like to learn more about any publicly available data. 
 
 :::info[Answer]
-See a list of our public [Datasets](/docs/category/datasets/) or visit https://dataverse.harvard.edu/dataverse/jocohs to search the data.
+See a list of our public or visit https://dataverse.harvard.edu/dataverse/jocohs to search the data.
 :::
 
 ## Accessing the data
@@ -27,7 +23,7 @@ Visit https://dataverse.harvard.edu/dataverse/jocohs to download datasets.
 I am interested in learning how you curate your data.
 
 :::info[Answer]
-See our [Curation tools](/docs/category/data-curation-tools/) documentation.
+See our [Curation tools](xx /docs/category/data-curation-tools/ xx) documentation.
 :::
 
 ## Technical magic
