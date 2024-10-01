@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - [x] moving sidebar definitions to the sidebars JS and out of the Markdown and category files to centralize the management of the sidebar
 - [x] adding https://fontawesome.com/ icon library
+- [x] tried to use Node v16 but Vercel notifies that it is end of life so reverting back to v20
 
 ## [1.0.0] - Sept. 20, 2024
 
