@@ -46,7 +46,23 @@ Here we will use the `.env.prod` file to define our APPLICATION_ID and API_KEY
 
 Prop up on OpenShift
 
+```used NodeJs 20
+oc new-app "https://github.com/kuhlaid/jocoknow.git" \
+--image-stream="openshift/nodejs:20" \
+--name jocoknow \
+--build-env-file=".env.prod" \
+--env-file=".env.prod"
 ```
+
+
+```does not work (no version 20)
+oc new-app nodejs:20-ubi8~"https://github.com/kuhlaid/jocoknow.git" \
+--name jocoknow \
+--build-env-file=".env.prod" \
+--env-file=".env.prod"
+```
+
+```does not work (uses version 16 as the latest)
 oc new-app "https://github.com/kuhlaid/jocoknow.git" \
 --image-stream="openshift/nodejs:latest" \
 --name jocoknow \
@@ -54,9 +70,13 @@ oc new-app "https://github.com/kuhlaid/jocoknow.git" \
 --env-file=".env.prod"
 ```
 
-Create OpenShift route
+
+
+### Create OpenShift route
 
 // create a non-shibboleth secure route (note if you create a shibboleth route then you should remove this route)
 `oc create route edge --service=jocoknow --insecure-policy=Redirect`
+
+### Start over with OpenShift app
 
 `oc delete all --selector app=jocoknow`

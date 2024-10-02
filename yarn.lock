@@ -2159,7 +2159,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/core@npm:3.5.2, @docusaurus/core@npm:^3.5.2":
+"@docusaurus/core@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/core@npm:3.5.2"
   dependencies:
@@ -2298,7 +2298,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/module-type-aliases@npm:3.5.2, @docusaurus/module-type-aliases@npm:^3.5.2":
+"@docusaurus/module-type-aliases@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/module-type-aliases@npm:3.5.2"
   dependencies:
@@ -2346,7 +2346,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-content-docs@npm:3.5.2, @docusaurus/plugin-content-docs@npm:^3.5.2":
+"@docusaurus/plugin-content-docs@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/plugin-content-docs@npm:3.5.2"
   dependencies:
@@ -2425,7 +2425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-google-gtag@npm:3.5.2, @docusaurus/plugin-google-gtag@npm:^3.5.2":
+"@docusaurus/plugin-google-gtag@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/plugin-google-gtag@npm:3.5.2"
   dependencies:
@@ -2476,7 +2476,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/preset-classic@npm:^3.5.2":
+"@docusaurus/preset-classic@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/preset-classic@npm:3.5.2"
   dependencies:
@@ -2536,7 +2536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/theme-common@npm:3.5.2, @docusaurus/theme-common@npm:^3.5.2":
+"@docusaurus/theme-common@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/theme-common@npm:3.5.2"
   dependencies:
@@ -2597,7 +2597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/types@npm:3.5.2, @docusaurus/types@npm:^3.5.2":
+"@docusaurus/types@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/types@npm:3.5.2"
   dependencies:
@@ -2631,7 +2631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/utils-validation@npm:3.5.2, @docusaurus/utils-validation@npm:^3.5.2":
+"@docusaurus/utils-validation@npm:3.5.2":
   version: 3.5.2
   resolution: "@docusaurus/utils-validation@npm:3.5.2"
   dependencies:
@@ -5473,14 +5473,14 @@ __metadata:
   resolution: "docusaurus@workspace:."
   dependencies:
     "@cmfcmf/docusaurus-search-local": "npm:^1.2.0"
-    "@docusaurus/core": "npm:^3.5.2"
-    "@docusaurus/module-type-aliases": "npm:^3.5.2"
-    "@docusaurus/plugin-content-docs": "npm:^3.5.2"
-    "@docusaurus/plugin-google-gtag": "npm:^3.5.2"
-    "@docusaurus/preset-classic": "npm:^3.5.2"
-    "@docusaurus/theme-common": "npm:^3.5.2"
-    "@docusaurus/types": "npm:^3.5.2"
-    "@docusaurus/utils-validation": "npm:^3.5.2"
+    "@docusaurus/core": "npm:3.5.2"
+    "@docusaurus/module-type-aliases": "npm:3.5.2"
+    "@docusaurus/plugin-content-docs": "npm:3.5.2"
+    "@docusaurus/plugin-google-gtag": "npm:3.5.2"
+    "@docusaurus/preset-classic": "npm:3.5.2"
+    "@docusaurus/theme-common": "npm:3.5.2"
+    "@docusaurus/types": "npm:3.5.2"
+    "@docusaurus/utils-validation": "npm:3.5.2"
     "@fortawesome/fontawesome-svg-core": "npm:^6.6.0"
     "@fortawesome/free-brands-svg-icons": "npm:^6.6.0"
     "@fortawesome/free-regular-svg-icons": "npm:^6.6.0"
