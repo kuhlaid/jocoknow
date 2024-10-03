@@ -46,30 +46,41 @@ Here we will use the `.env.prod` file to define our APPLICATION_ID and API_KEY
 
 Prop up on OpenShift
 
-```used NodeJs 20
-oc new-app "https://github.com/kuhlaid/jocoknow.git" \
---image-stream="openshift/nodejs:20" \
+
+// does not work
+oc new-app nodejs:20~"https://github.com/vercel/next-learn.git" \
+--name nextjs
+
+
+
+oc create route edge --service=nextjs --insecure-policy=Redirect 
+
+oc delete all --selector app=nextjs
+
+```uses NodeJs 20 but not able to figure out the routing for port 3000
+oc new-app nodejs:20~"https://github.com/JudiniLabs/code-gpt-docs.git" \
+--name code-gpt-docs
+```
+
+`oc delete all --selector app=code-gpt-docs`
+
+`oc create route edge --service=code-gpt-docs --insecure-policy=Redirect --port 3000`
+
+oc new-app nodejs:20~https://github.com/sclorg/s2i-nodejs-container.git --context-dir=20/test/test-app/
+
+```does not work
+oc new-app nodejs:20~"https://github.com/kuhlaid/jocoknow.git" \
 --name jocoknow \
 --build-env-file=".env.prod" \
 --env-file=".env.prod"
 ```
 
-
-```does not work (no version 20)
-oc new-app nodejs:20-ubi8~"https://github.com/kuhlaid/jocoknow.git" \
+```does not work
+oc new-app nodejs:18~"https://github.com/kuhlaid/jocoknow.git" \
 --name jocoknow \
 --build-env-file=".env.prod" \
 --env-file=".env.prod"
 ```
-
-```does not work (uses version 16 as the latest)
-oc new-app "https://github.com/kuhlaid/jocoknow.git" \
---image-stream="openshift/nodejs:latest" \
---name jocoknow \
---build-env-file=".env.prod" \
---env-file=".env.prod"
-```
-
 
 
 ### Create OpenShift route
