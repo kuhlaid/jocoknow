@@ -95,7 +95,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'leftSidebar',
             position: 'left',
-            label: 'README',
+            label: '> Main menu',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {

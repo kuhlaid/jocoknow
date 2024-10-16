@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.2] - future
 
-- [x] switching to using port 8080
-- [ ] switching package manager to `yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e` in the package.json file to see if that forces OpenShift to build using yarn instead of npm (testing this since it updates packages and lockfile); apparently the package.json file was using the wrong package version
+- [x] changing the main menu link to `> Main menu` to make it more obvious
+- [x] switching to using port 8080 (to try and make OpenShift happy on build attempts)
+- [x] switching package manager to `yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e` in the package.json file to see if that forces OpenShift to build using yarn instead of npm (testing this since it updates packages and lockfile); apparently the package.json file was using the wrong package version but the problem with OpenShift was that the image does not allow for use of Yarn and only uses NPM (which is the reason for the problems)
 
 ## [1.0.1] - Oct. 1, 2024
 
