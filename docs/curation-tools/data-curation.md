@@ -21,7 +21,7 @@ Data repositories should implement an API for automated curation and retrieval o
 ## File naming
 
 File naming is tricky. File naming can serve many purposes. Sometimes it is simply a human interpretive function where a user reads the filename to try and determine the purpose of the file. Short files names may not convey enough information, but long file names may be truncated in a user interface and thus making the naming less effective. In other cases, the file naming may be used by automation systems in which case the files are generally described in more detail in a database or ancillary document, making it more difficult for humans to read the filename alone to gain meaning. 
-There is no single correct way to handle file naming, but we prefer to stick with simple consistent names in similar files across our datasets for data import. Our README metadata files will be named `README.json` and our main data table files will be named `dataTable.csv`. This way we can write automated processes that do not need to be rewritten or modified between datasets. 
+There is no single correct way to handle file naming, but we prefer to stick with simple consistent names in similar files across our datasets for data import. Our README metadata files will be named `dvDatasetMetadata.json` and our main data table files will be named `dataTable.csv`. This way we can write automated processes that do not need to be rewritten or modified between datasets. 
 
 The distinction should be made that while we use a common name for similar files across datasets for data import, scripted data export via the repository API can provide renaming of the files to be distinct to a dataset before analyzing. For example, the `dataTable.csv` file could be exported as `[datasetPrefix].dataTable.csv` or `studyT3.anthropometry.dataTable.csv`, although it is not recommended for scripting efficiency as we mentioned with the data import.
 
@@ -45,5 +45,5 @@ To complement the CURATED checklist, there needs to be a clear group of individu
 
 ## Data deposit
 
-Now we will get into how to initialize a dataset in Dataverse using the API and Python scripts. In the [README.json](/docs/curation-tools/data-dictionary.md#readmejson-metadata) section where we described the data dictionary, now we will see how the metadata used to create our dataset.
+Now we will get into how to initialize a dataset in Dataverse using the API and Python scripts. In the [dvDatasetMetadata.json](/docs/curation-tools/data-dictionary.md#dvdatasetmetadatajson-metadata) section where we described the data dictionary, now we will see how the metadata used to create our dataset.
 
