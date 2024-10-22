@@ -128,6 +128,7 @@ The following information pertains to the curation of this dataset, meaning it r
 - [x] Ask about additional data contributors, beyond publication authors. Consider using the Contributor Roles Taxonomy to communicate this: https://casrai.org/credit/  
 - [ ] Summarize conversations / outreach efforts in Curator Log
   > Reaching out to PIs review the dataset before final publication
+  > Received PI suggestions for metadata updates, so updating the metadata file, removing the dataset draft from the repository and uploading the revisions to the repository. Adding scripts to include the variable labels in the statistics for the README. Once the new dataset draft is uploaded I regenerate the README file based on the latest metadata pushed to the repository.
 
 ## **AUGMENT Step**
 

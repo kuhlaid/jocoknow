@@ -5,8 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.2] - future
 
+## [1.0.3] - future
+
+- [ ] include an article about handling data with null cells using Python
+
+## [1.0.2] - 2024.10.22
+
+- [x] updated dataset 10.7910_DVN_SKP9IB
 - [x] add link to https://gist.github.com/kuhlaid/a8de3160fceb9a72248d3a28c39f761c 
 - [x] changing the main menu link to `> Main menu` to make it more obvious
 - [x] switching to using port 8080 (to try and make OpenShift happy on build attempts)

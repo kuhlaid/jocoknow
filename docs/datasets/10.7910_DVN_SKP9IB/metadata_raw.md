@@ -100,7 +100,7 @@ This file contains the metadata details (citation, code book, and data dictionar
                                     "typeName": "dsDescriptionValue",
                                     "multiple": false,
                                     "typeClass": "primitive",
-                                    "value": "<h1>About this data</h1>An ultrasound dataset to use in the discovery of ultrasound features associated with pain and radiographic change in KOA is highly innovative and will be a major step forward for the field. These ultrasound images originate from the diverse and inclusive population-based Johnston County Health Study (JoCoHS). This dataset is designed to adhere to FAIR principles and was funded in part by an Administrative Supplement to Improve the AI/ML-Readiness of NIH-Supported Data (3R01AR077060-03S1)."
+                                    "value": "<h1>About the data</h1>An ultrasound dataset to use in the discovery of ultrasound features associated with pain and radiographic change in KOA is highly innovative and will be a major step forward for the field. These ultrasound images originate from the diverse and inclusive population-based Johnston County Health Study (JoCoHS). This dataset is designed to adhere to FAIR principles and was funded in part by an Administrative Supplement to Improve the AI/ML-Readiness of NIH-Supported Data (3R01AR077060-03S1)."
                                 },
                                 "dsDescriptionDate": {
                                     "typeName": "dsDescriptionDate",
@@ -114,7 +114,7 @@ This file contains the metadata details (citation, code book, and data dictionar
                                     "typeName": "dsDescriptionValue",
                                     "multiple": false,
                                     "typeClass": "primitive",
-                                    "value": "<h2>To begin learning about this dataset, visit our <a href='https://jocoknow.vercel.app/docs/datasets/10.7910_DVN_SKP9IB/overview' target='_blank'>User Guide</a> for an all-in-one document containing statistics and other details to help you work with the data.</h2>"
+                                    "value": "<h2>To begin learning about the dataset, visit our <a href='https://jocoknow.vercel.app/docs/datasets/10.7910_DVN_SKP9IB/overview' target='_blank'>User Guide</a> for an all-in-one document containing statistics and other details to help you work with the data.</h2>"
                                 },
                                 "dsDescriptionDate": {
                                     "typeName": "dsDescriptionDate",
@@ -367,6 +367,14 @@ This file contains the metadata details (citation, code book, and data dictionar
                         "typeClass": "compound",
                         "value": [
                             {
+                                "grantNumberValue": {
+                                    "typeName": "grantNumberValue",
+                                    "multiple": false,
+                                    "typeClass": "primitive",
+                                    "value": "R01AR077060"
+                                }
+                            },
+                            {
                                 "grantNumberAgency": {
                                     "typeName": "grantNumberAgency",
                                     "multiple": false,
@@ -491,7 +499,7 @@ This file contains the metadata details (citation, code book, and data dictionar
                 {
                     "name": "E03PASKR",
                     "surveyQuestion": "On MOST days of ANY ONE MONTH in the LAST 12 MONTHS did you have pain, aching, or stiffness in any of the following? Please rate as none, mild, moderate, or severe. - Right - Knee",
-                    "label": "Right Knee - pain, aching, or stiffness",
+                    "label": "Right Knee - pain, aching, or stiffness on MOST days of ANY ONE MONTH in the LAST 12 MONTHS",
                     "source": "Qualtrics survey (1h2J)",
                     "value": {
                         "format": "categorical",
@@ -518,7 +526,7 @@ This file contains the metadata details (citation, code book, and data dictionar
                 {
                     "name": "E03PASKL",
                     "surveyQuestion": "On MOST days of ANY ONE MONTH in the LAST 12 MONTHS did you have pain, aching, or stiffness in any of the following? Please rate as none, mild, moderate, or severe. - Left - Knee",
-                    "label": "Left Knee - pain, aching, or stiffness",
+                    "label": "Left Knee - pain, aching, or stiffness on MOST days of ANY ONE MONTH in the LAST 12 MONTHS",
                     "source": "Qualtrics survey (1h2J)",
                     "value": {
                         "format": "categorical",
@@ -592,7 +600,7 @@ This file contains the metadata details (citation, code book, and data dictionar
                 },
                 {
                     "name": "E03AGE",
-                    "label": "Age range (in years) at time of JoCoHS enrollment",
+                    "label": "Age categorized in 5-year increments at time of JoCoHS enrollment",
                     "value": {
                         "format": "categorical",
                         "unitOfMeasure": "year",
@@ -651,20 +659,20 @@ This file contains the metadata details (citation, code book, and data dictionar
                         "dataType": "Int64",
                         "unique": "False",
                         "category": {
-                            "11": "Right SUPRAPAT LONG",
-                            "12": "Right SUPRAPAT LONG CPD",
-                            "13": "Right SUPRAPAT TRANS 30",
-                            "14": "Right MED LONG",
-                            "15": "Right LAT LONG",
-                            "16": "Right SUPRAPAT TRANS FLEX",
-                            "17": "Right POST TRANS",
-                            "21": "Left SUPRAPAT LONG",
-                            "22": "Left SUPRAPAT LONG CPD",
-                            "23": "Left SUPRAPAT TRANS 30",
-                            "24": "Left MED LONG",
-                            "25": "Left LAT LONG",
-                            "26": "Left SUPRAPAT TRANS FLEX",
-                            "27": "Left POST TRANS"
+                            "11": "Right Anterior suprapatellar longitudinal",
+                            "12": "Right Anterior suprapatellar longitudinal with power Doppler",
+                            "13": "Right Anterior suprapatellar transverse in 30 degrees flexion",
+                            "14": "Right Medial longitudinal",
+                            "15": "Right Lateral longitudinal",
+                            "16": "Right Anterior suprapatellar transverse in maximal flexion",
+                            "17": "Right Posterior medial transverse",
+                            "21": "Left Anterior suprapatellar longitudinal",
+                            "22": "Left Anterior suprapatellar longitudinal with power Doppler",
+                            "23": "Left Anterior suprapatellar transverse in 30 degrees flexion",
+                            "24": "Left Medial longitudinal",
+                            "25": "Left Lateral longitudinal",
+                            "26": "Left Anterior suprapatellar transverse in maximal flexion",
+                            "27": "Left Posterior medial transverse"
                         }
                     },
                     "identifier": "False",
@@ -701,7 +709,7 @@ This file contains the metadata details (citation, code book, and data dictionar
                 },
                 {
                     "name": "E03USIMGD",
-                    "label": "Knee imaged (left or right knee)",
+                    "label": "Knee imaged - left or right knee",
                     "value": {
                         "format": "categorical",
                         "dataType": "Int64",
@@ -724,7 +732,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.11.zip",
             "fileCount": 867,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Right SUPRAPAT LONG, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Right Anterior suprapatellar longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -734,7 +742,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.12.zip",
             "fileCount": 867,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Right SUPRAPAT LONG CPD, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Right Anterior suprapatellar longitudinal with power Doppler, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -744,7 +752,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.13.zip",
             "fileCount": 866,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Right SUPRAPAT TRANS 30, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Right Anterior suprapatellar transverse in 30 degrees flexion, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -754,7 +762,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.14.zip",
             "fileCount": 867,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Right MED LONG, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Right Medial longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -764,7 +772,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.15.zip",
             "fileCount": 867,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Right LAT LONG, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Right Lateral longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -774,7 +782,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.16.zip",
             "fileCount": 865,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Right SUPRAPAT TRANS FLEX, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Right Anterior suprapatellar transverse in maximal flexion, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -784,7 +792,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.17.zip",
             "fileCount": 835,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Right POST TRANS, ultrasound images (file count: 835). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Right Posterior medial transverse, ultrasound images (file count: 835). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -794,7 +802,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.21.zip",
             "fileCount": 866,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Left SUPRAPAT LONG, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Left Anterior suprapatellar longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -804,7 +812,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.22.zip",
             "fileCount": 866,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Left SUPRAPAT LONG CPD, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Left Anterior suprapatellar longitudinal with power Doppler, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -814,7 +822,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.23.zip",
             "fileCount": 866,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Left SUPRAPAT TRANS 30, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Left Anterior suprapatellar transverse in 30 degrees flexion, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -824,7 +832,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.24.zip",
             "fileCount": 866,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Left MED LONG, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Left Medial longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -834,7 +842,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.25.zip",
             "fileCount": 866,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Left LAT LONG, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Left Lateral longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -844,7 +852,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.26.zip",
             "fileCount": 865,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Left SUPRAPAT TRANS FLEX, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Left Anterior suprapatellar transverse in maximal flexion, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
@@ -854,7 +862,7 @@ This file contains the metadata details (citation, code book, and data dictionar
             "strFileName": "imageArchive.27.zip",
             "fileCount": 834,
             "strDirectoryLabel": "data/image/ultrasound",
-            "strDataDescription": "This file contains an archive of Left POST TRANS, ultrasound images (file count: 834). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
+            "strDataDescription": "This file contains an archive of Left Posterior medial transverse, ultrasound images (file count: 834). There should only be one image per subject in this archive. Images are saved in lossless .png format.",
             "lstCatgories": [
                 "data",
                 "image"
