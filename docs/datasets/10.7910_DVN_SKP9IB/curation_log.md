@@ -17,6 +17,8 @@ The following information pertains to the curation of this dataset, meaning it r
 
 ## ToDo items
 
+- [x] added a method to check that categorical values listed in the metadata are not being used so we can remove them and conserve space
+- [x] change the empty values to -99 and include in the metadata
 - [x] update the user notebook and instructions.md
 - [x] include the curation log in the User Guide for the dataset
 - [x] in the `Are there missing data?` step, we should add extra steps to consider such as which questions did you ask to help determine if there was missing data; include a way to add questions and answers to those questions within the log similar to a Todo list
@@ -70,6 +72,7 @@ The following information pertains to the curation of this dataset, meaning it r
 
 - [x] Examine files, organization, and documentation more thoroughly.
     > This was an iterative process that cycled between writing code to generate dataset documentation and the files and metadata needed to create it. The main driver was the metadata JSON file which contains the data to initialize a dataset, determines the files to be imported into the repository, defines the data-table variables and categorical values, and other dataset descriptive information. As scripts were modified to parse the metadata and generate new documentation files, the generated files were imported into the repository and documentation website to ensure optimal accessibility and organization.
+    > Discussed empty data table cells with the team and a value of -99, instead of NULL, was decided since that would keep numeric columns treated as numeric and not string (if NULL were used)
   - [x] Are there changes that could enhance the dataset? NA
   - [x] Are there missing data?
     > No. This dataset is a subset of the individual data collection instruments and image archives it draws from, which may, by themselves, contain more records that are not specific to this subset.
@@ -84,6 +87,7 @@ The following information pertains to the curation of this dataset, meaning it r
     > Providing both machine readable data and human readable documentation
 - [x] Record all questions and concerns in Curation Log.
   > Was concerned about data encoding checks but using VSCode with UTF-8 default encoding and Jupyter notebook processing via Python ensured the encoding of UTF-8 for text files
+  > Researchers were concerned about dataset citation versions with the Dataverse, but this is out of scope for us to handle since the Dataverse controls the versioning
 
 *Tasks vary based on file formats and subject domain. Sample tasks based on format:* 
 
