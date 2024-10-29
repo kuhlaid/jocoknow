@@ -133,33 +133,33 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | filename                                                                        | directory             | categories                                       | description                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|---:|:--------------------------------------------------------------------------------|:----------------------|:-------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 18 | <strong>README.notebook.public.ipynb</strong><br/>Size: 54.9 kB                 | code                  | ['code', 'Jupyter', 'notebook']                  | This file provides documentation describing the dataset and a preview of the data. This notebook also includes code to use as a dataset documenting framework for your own projects.                                                                                                                                                                                                                                                                    |
-|  2 | <strong>_notebook.config.template.json</strong><br/>Size: 3.9 kB                | code                  | ['code', 'json']                                 | This file is used with the README.notebook.public.ipynb and contains the notebook variables. It also contains an embedded schema to describe/validate the JSON config.                                                                                                                                                                                                                                                                                  |
-| 21 | <strong>_notebook.instructions.md</strong><br/>Size: 3.5 kB                     | code                  | ['code', 'Jupyter', 'Markdown']                  | This file is used with the README.notebook.public.ipynb and contains instructions on using the notebook.                                                                                                                                                                                                                                                                                                                                                |
-| 20 | <strong>_notebook_installer.py</strong><br/>Size: 699 Bytes                     | code                  | ['code', 'Jupyter', 'notebook', 'Python script'] | The purpose of this file is to install any Python modules used by the Jupyter notebook that are not included in the Jupyter environment by default. This script is only useful to those wanting to run the code within the Jupyter notebook.                                                                                                                                                                                                            |
-| 19 | <strong>_notebook_worker.py</strong><br/>Size: 18.2 kB                          | code                  | ['code', 'Jupyter', 'notebook', 'Python script'] | This file contains the scripts to help describe the dataset within the Jupyter Notebook. This script is ONLY useful to those wanting to run the code within the Jupyter Notebook. This code is kept separate from the Notebook to prevent the Notebook becoming bloated with code.                                                                                                                                                                      |
-| 22 | <strong>example.us.image.png</strong><br/>Size: 127.5 kB                        | data/image/example    | ['data', 'example']                              | This is an example ultrasound file that represents one of the images from the image archives and should not be used for analysis purposes. Images in this dataset are saved in lossless .png format.                                                                                                                                                                                                                                                    |
-|  3 | <strong>imageArchive.11.zip</strong><br/>Size: 104.7 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                  |
-|  4 | <strong>imageArchive.12.zip</strong><br/>Size: 133.0 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar longitudinal with power Doppler, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                               |
-|  5 | <strong>imageArchive.13.zip</strong><br/>Size: 112.6 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar transverse in 30 degrees flexion, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                              |
-|  6 | <strong>imageArchive.14.zip</strong><br/>Size: 83.6 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right medial longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                  |
-|  7 | <strong>imageArchive.15.zip</strong><br/>Size: 81.8 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right lateral longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                 |
-|  8 | <strong>imageArchive.16.zip</strong><br/>Size: 88.5 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar transverse in maximal flexion, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                 |
-|  9 | <strong>imageArchive.17.zip</strong><br/>Size: 101.6 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right posterior medial transverse, ultrasound images (file count: 835). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                          |
-| 10 | <strong>imageArchive.21.zip</strong><br/>Size: 104.2 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                   |
-| 11 | <strong>imageArchive.22.zip</strong><br/>Size: 132.3 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar longitudinal with power Doppler, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                |
-| 12 | <strong>imageArchive.23.zip</strong><br/>Size: 112.6 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar transverse in 30 degrees flexion, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                               |
-| 13 | <strong>imageArchive.24.zip</strong><br/>Size: 83.2 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left medial longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                   |
-| 14 | <strong>imageArchive.25.zip</strong><br/>Size: 81.7 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left lateral longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                  |
-| 15 | <strong>imageArchive.26.zip</strong><br/>Size: 89.3 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar transverse in maximal flexion, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                  |
-| 16 | <strong>imageArchive.27.zip</strong><br/>Size: 101.2 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left posterior medial transverse, ultrasound images (file count: 834). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                           |
-|  0 | <strong>dataTable.IMAGE_REF.tab</strong><br/>Size: 1.2 MB<br/>Row count: 12,063 | data/reference        | ['data', 'reference']                            | This file contains the ultrasound image metadata. Use this file to determine the number of ultrasound image types available, file sizes, and references to the files found in the ancillary image archives.                                                                                                                                                                                                                                             |
-|  1 | <strong>dataTable.SUBJECT.tab</strong><br/>Size: 45.0 kB<br/>Row count: 881     | data/reference        | ['data', 'reference']                            | This is the first file generated for this dataset and contains the participant/subject reference IDs, basic subject demographics, PA knee KL grades and reported pain in knees.                                                                                                                                                                                                                                                                         |
-| 17 | <strong>dvDatasetMetadata.json</strong><br/>Size: 87.8 kB                       | data/reference        | ['data', 'reference']                            | This file contains metadata created BEFORE data was uploaded to the repository dataset to help describe the data we EXPECT to have uploaded to the dataset. This is file was created since the repository does not contain built-in tools to describe data files and variables in depth, which is needed to both document the data and perform validation. This file is used to validate and describe categorical variables within the datatable files. |
-| 24 | <strong>README.md</strong><br/>Size: 31.3 kB                                    | documentation         | ['README']                                       | This document contains an overview of the dataset and is a good starting point to understanding the data.                                                                                                                                                                                                                                                                                                                                               |
-| 23 | <strong>curation_log.md</strong><br/>Size: 17.1 kB                              | documentation         | ['curation']                                     | This document contains the dataset curation checklist and notes regarding the considerations and steps taken to curate the data.                                                                                                                                                                                                                                                                                                                        |
+| filename                                                                        | directory             | categories                                       | description                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|:--------------------------------------------------------------------------------|:----------------------|:-------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>README.notebook.public.ipynb</strong><br/>Size: 55.0 kB                 | code                  | ['code', 'Jupyter', 'notebook']                  | This file provides documentation describing the dataset and a preview of the data. This notebook also includes code to use as a dataset documenting framework for your own projects.                                                                                                                                                                                                                                                                    |
+| <strong>_notebook.config.template.json</strong><br/>Size: 3.9 kB                | code                  | ['code', 'json']                                 | This file is used with the README.notebook.public.ipynb and contains the notebook variables. It also contains an embedded schema to describe/validate the JSON config.                                                                                                                                                                                                                                                                                  |
+| <strong>_notebook.instructions.md</strong><br/>Size: 3.5 kB                     | code                  | ['code', 'Jupyter', 'Markdown']                  | This file is used with the README.notebook.public.ipynb and contains instructions on using the notebook.                                                                                                                                                                                                                                                                                                                                                |
+| <strong>_notebook_installer.py</strong><br/>Size: 699 Bytes                     | code                  | ['code', 'Jupyter', 'notebook', 'Python script'] | The purpose of this file is to install any Python modules used by the Jupyter notebook that are not included in the Jupyter environment by default. This script is only useful to those wanting to run the code within the Jupyter notebook.                                                                                                                                                                                                            |
+| <strong>_notebook_worker.py</strong><br/>Size: 18.2 kB                          | code                  | ['code', 'Jupyter', 'notebook', 'Python script'] | This file contains the scripts to help describe the dataset within the Jupyter Notebook. This script is ONLY useful to those wanting to run the code within the Jupyter Notebook. This code is kept separate from the Notebook to prevent the Notebook becoming bloated with code.                                                                                                                                                                      |
+| <strong>example.us.image.png</strong><br/>Size: 127.5 kB                        | data/image/example    | ['data', 'example']                              | This is an example ultrasound file that represents one of the images from the image archives and should not be used for analysis purposes. Images in this dataset are saved in lossless .png format.                                                                                                                                                                                                                                                    |
+| <strong>imageArchive.11.zip</strong><br/>Size: 104.7 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                  |
+| <strong>imageArchive.12.zip</strong><br/>Size: 133.0 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar longitudinal with power Doppler, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                               |
+| <strong>imageArchive.13.zip</strong><br/>Size: 112.6 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar transverse in 30 degrees flexion, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                              |
+| <strong>imageArchive.14.zip</strong><br/>Size: 83.6 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right medial longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                  |
+| <strong>imageArchive.15.zip</strong><br/>Size: 81.8 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right lateral longitudinal, ultrasound images (file count: 867). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                 |
+| <strong>imageArchive.16.zip</strong><br/>Size: 88.5 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right anterior suprapatellar transverse in maximal flexion, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                 |
+| <strong>imageArchive.17.zip</strong><br/>Size: 101.6 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of right posterior medial transverse, ultrasound images (file count: 835). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                          |
+| <strong>imageArchive.21.zip</strong><br/>Size: 104.2 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                   |
+| <strong>imageArchive.22.zip</strong><br/>Size: 132.3 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar longitudinal with power Doppler, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                |
+| <strong>imageArchive.23.zip</strong><br/>Size: 112.6 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar transverse in 30 degrees flexion, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                               |
+| <strong>imageArchive.24.zip</strong><br/>Size: 83.2 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left medial longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                   |
+| <strong>imageArchive.25.zip</strong><br/>Size: 81.7 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left lateral longitudinal, ultrasound images (file count: 866). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                                  |
+| <strong>imageArchive.26.zip</strong><br/>Size: 89.3 MB                          | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left anterior suprapatellar transverse in maximal flexion, ultrasound images (file count: 865). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                  |
+| <strong>imageArchive.27.zip</strong><br/>Size: 101.2 MB                         | data/image/ultrasound | ['data', 'image']                                | This file contains an archive of left posterior medial transverse, ultrasound images (file count: 834). There should only be one image per subject in this archive. Images are saved in lossless .png format.                                                                                                                                                                                                                                           |
+| <strong>dataTable.IMAGE_REF.tab</strong><br/>Size: 1.2 MB<br/>Row count: 12,063 | data/reference        | ['data', 'reference']                            | This file contains the ultrasound image metadata. Use this file to determine the number of ultrasound image types available, file sizes, and references to the files found in the ancillary image archives.                                                                                                                                                                                                                                             |
+| <strong>dataTable.SUBJECT.tab</strong><br/>Size: 45.0 kB<br/>Row count: 881     | data/reference        | ['data', 'reference']                            | This is the first file generated for this dataset and contains the participant/subject reference IDs, basic subject demographics, PA knee KL grades and reported pain in knees.                                                                                                                                                                                                                                                                         |
+| <strong>dvDatasetMetadata.json</strong><br/>Size: 87.8 kB                       | data/reference        | ['data', 'reference']                            | This file contains metadata created BEFORE data was uploaded to the repository dataset to help describe the data we EXPECT to have uploaded to the dataset. This is file was created since the repository does not contain built-in tools to describe data files and variables in depth, which is needed to both document the data and perform validation. This file is used to validate and describe categorical variables within the datatable files. |
+| <strong>README.md</strong><br/>Size: 31.3 kB                                    | documentation         | ['README']                                       | This document contains an overview of the dataset and is a good starting point to understanding the data.                                                                                                                                                                                                                                                                                                                                               |
+| <strong>curation_log.md</strong><br/>Size: 17.1 kB                              | documentation         | ['curation']                                     | This document contains the dataset curation checklist and notes regarding the considerations and steps taken to curate the data.                                                                                                                                                                                                                                                                                                                        |
 
 
     25 files EXPECTED in this dataset
@@ -174,13 +174,13 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | E03SUBJECTID                         | E03GENDER   | E03PASKR   | E03PASKL   | E03RADRPAKKL    | E03RADLPAKKL     | E03AGE   |
-|---:|:-------------------------------------|:------------|:-----------|:-----------|:----------------|:-----------------|:---------|
-|  0 | 72bb0a51-f020-11ed-b527-0a580a5f736a | Female      | Moderate   | None       | Moderate OA     | Moderate OA      | 50-54    |
-|  1 | 72bb0a76-f020-11ed-b527-0a580a5f736a | Female      | Severe     | None       | Mild OA         | No image to read | 60-64    |
-|  2 | 72bb0a8a-f020-11ed-b527-0a580a5f736a | Female      | Moderate   | Moderate   | Questionable OA | Mild OA          | 65-70    |
-|  3 | 72bb0a99-f020-11ed-b527-0a580a5f736a | Female      | None       | Mild       | No OA           | Questionable OA  | 45-49    |
-|  4 | 72bb0ab5-f020-11ed-b527-0a580a5f736a | Male        | None       | None       | Questionable OA | Mild OA          | 40-44    |
+| E03SUBJECTID                         | E03GENDER   | E03PASKR   | E03PASKL   | E03RADRPAKKL    | E03RADLPAKKL     | E03AGE   |
+|:-------------------------------------|:------------|:-----------|:-----------|:----------------|:-----------------|:---------|
+| 72bb0a51-f020-11ed-b527-0a580a5f736a | Female      | Moderate   | None       | Moderate OA     | Moderate OA      | 50-54    |
+| 72bb0a76-f020-11ed-b527-0a580a5f736a | Female      | Severe     | None       | Mild OA         | No image to read | 60-64    |
+| 72bb0a8a-f020-11ed-b527-0a580a5f736a | Female      | Moderate   | Moderate   | Questionable OA | Mild OA          | 65-70    |
+| 72bb0a99-f020-11ed-b527-0a580a5f736a | Female      | None       | Mild       | No OA           | Questionable OA  | 45-49    |
+| 72bb0ab5-f020-11ed-b527-0a580a5f736a | Male        | None       | None       | Questionable OA | Mild OA          | 40-44    |
 
 
 
@@ -360,10 +360,10 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category   |   counts |
-|---:|:-----------|---------:|
-|  0 | Female     |      587 |
-|  1 | Male       |      294 |
+| category   |   counts |
+|:-----------|---------:|
+| Female     |      587 |
+| Male       |      294 |
 
 
 
@@ -371,13 +371,13 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category    |   counts |
-|---:|:------------|---------:|
-|  0 | None        |      399 |
-|  1 | Mild        |      196 |
-|  2 | Moderate    |      181 |
-|  3 | Severe      |      103 |
-|  4 | No response |        2 |
+| category    |   counts |
+|:------------|---------:|
+| None        |      399 |
+| Mild        |      196 |
+| Moderate    |      181 |
+| Severe      |      103 |
+| No response |        2 |
 
 
 
@@ -385,13 +385,13 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category    |   counts |
-|---:|:------------|---------:|
-|  0 | None        |      448 |
-|  1 | Moderate    |      168 |
-|  2 | Mild        |      168 |
-|  3 | Severe      |       95 |
-|  4 | No response |        2 |
+| category    |   counts |
+|:------------|---------:|
+| None        |      448 |
+| Moderate    |      168 |
+| Mild        |      168 |
+| Severe      |       95 |
+| No response |        2 |
 
 
 
@@ -399,15 +399,15 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category                |   counts |
-|---:|:------------------------|---------:|
-|  0 | No OA                   |      303 |
-|  1 | Questionable OA         |      290 |
-|  2 | Mild OA                 |      119 |
-|  3 | Moderate OA             |       89 |
-|  4 | Severe OA               |       63 |
-|  5 | No image to read        |       15 |
-|  6 | Total joint replacement |        2 |
+| category                |   counts |
+|:------------------------|---------:|
+| No OA                   |      303 |
+| Questionable OA         |      290 |
+| Mild OA                 |      119 |
+| Moderate OA             |       89 |
+| Severe OA               |       63 |
+| No image to read        |       15 |
+| Total joint replacement |        2 |
 
 
 
@@ -415,15 +415,15 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category                |   counts |
-|---:|:------------------------|---------:|
-|  0 | No OA                   |      339 |
-|  1 | Questionable OA         |      262 |
-|  2 | Mild OA                 |      120 |
-|  3 | Moderate OA             |       87 |
-|  4 | Severe OA               |       55 |
-|  5 | No image to read        |       15 |
-|  6 | Total joint replacement |        3 |
+| category                |   counts |
+|:------------------------|---------:|
+| No OA                   |      339 |
+| Questionable OA         |      262 |
+| Mild OA                 |      120 |
+| Moderate OA             |       87 |
+| Severe OA               |       55 |
+| No image to read        |       15 |
+| Total joint replacement |        3 |
 
 
 
@@ -431,15 +431,15 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category   |   counts |
-|---:|:-----------|---------:|
-|  0 | 65-70      |      171 |
-|  1 | 60-64      |      153 |
-|  2 | 55-59      |      149 |
-|  3 | 50-54      |      144 |
-|  4 | 40-44      |      104 |
-|  5 | 45-49      |      102 |
-|  6 | 35-39      |       58 |
+| category   |   counts |
+|:-----------|---------:|
+| 65-70      |      171 |
+| 60-64      |      153 |
+| 55-59      |      149 |
+| 50-54      |      144 |
+| 40-44      |      104 |
+| 45-49      |      102 |
+| 35-39      |       58 |
 
 
 
@@ -451,13 +451,13 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | E03SUBJECTID                         | E03USIMGT                                                    | E03USIMGF                                   |   E03USIMGZ | E03USIMGD   |
-|---:|:-------------------------------------|:-------------------------------------------------------------|:--------------------------------------------|------------:|:------------|
-|  0 | 72bb0a51-f020-11ed-b527-0a580a5f736a | left anterior suprapatellar longitudinal                     | 72bb0a51-f020-11ed-b527-0a580a5f736a_21.png |      132460 | Left        |
-|  1 | 72bb0a51-f020-11ed-b527-0a580a5f736a | left anterior suprapatellar longitudinal with power Doppler  | 72bb0a51-f020-11ed-b527-0a580a5f736a_22.png |      154179 | Left        |
-|  2 | 72bb0a51-f020-11ed-b527-0a580a5f736a | left anterior suprapatellar transverse in 30 degrees flexion | 72bb0a51-f020-11ed-b527-0a580a5f736a_23.png |      133222 | Left        |
-|  3 | 72bb0a51-f020-11ed-b527-0a580a5f736a | left medial longitudinal                                     | 72bb0a51-f020-11ed-b527-0a580a5f736a_24.png |      121758 | Left        |
-|  4 | 72bb0a51-f020-11ed-b527-0a580a5f736a | left lateral longitudinal                                    | 72bb0a51-f020-11ed-b527-0a580a5f736a_25.png |      108043 | Left        |
+| E03SUBJECTID                         | E03USIMGT                                                    | E03USIMGF                                   |   E03USIMGZ | E03USIMGD   |
+|:-------------------------------------|:-------------------------------------------------------------|:--------------------------------------------|------------:|:------------|
+| 72bb0a51-f020-11ed-b527-0a580a5f736a | left anterior suprapatellar longitudinal                     | 72bb0a51-f020-11ed-b527-0a580a5f736a_21.png |      132460 | Left        |
+| 72bb0a51-f020-11ed-b527-0a580a5f736a | left anterior suprapatellar longitudinal with power Doppler  | 72bb0a51-f020-11ed-b527-0a580a5f736a_22.png |      154179 | Left        |
+| 72bb0a51-f020-11ed-b527-0a580a5f736a | left anterior suprapatellar transverse in 30 degrees flexion | 72bb0a51-f020-11ed-b527-0a580a5f736a_23.png |      133222 | Left        |
+| 72bb0a51-f020-11ed-b527-0a580a5f736a | left medial longitudinal                                     | 72bb0a51-f020-11ed-b527-0a580a5f736a_24.png |      121758 | Left        |
+| 72bb0a51-f020-11ed-b527-0a580a5f736a | left lateral longitudinal                                    | 72bb0a51-f020-11ed-b527-0a580a5f736a_25.png |      108043 | Left        |
 
 
 
@@ -570,22 +570,22 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category                                                      |   counts |
-|---:|:--------------------------------------------------------------|---------:|
-|  0 | right anterior suprapatellar longitudinal                     |      867 |
-|  1 | right anterior suprapatellar longitudinal with power Doppler  |      867 |
-|  2 | right lateral longitudinal                                    |      867 |
-|  3 | right medial longitudinal                                     |      867 |
-|  4 | left anterior suprapatellar longitudinal                      |      866 |
-|  5 | left anterior suprapatellar longitudinal with power Doppler   |      866 |
-|  6 | left anterior suprapatellar transverse in 30 degrees flexion  |      866 |
-|  7 | left medial longitudinal                                      |      866 |
-|  8 | left lateral longitudinal                                     |      866 |
-|  9 | right anterior suprapatellar transverse in 30 degrees flexion |      866 |
-| 10 | left anterior suprapatellar transverse in maximal flexion     |      865 |
-| 11 | right anterior suprapatellar transverse in maximal flexion    |      865 |
-| 12 | right posterior medial transverse                             |      835 |
-| 13 | left posterior medial transverse                              |      834 |
+| category                                                      |   counts |
+|:--------------------------------------------------------------|---------:|
+| right anterior suprapatellar longitudinal                     |      867 |
+| right anterior suprapatellar longitudinal with power Doppler  |      867 |
+| right lateral longitudinal                                    |      867 |
+| right medial longitudinal                                     |      867 |
+| left anterior suprapatellar longitudinal                      |      866 |
+| left anterior suprapatellar longitudinal with power Doppler   |      866 |
+| left anterior suprapatellar transverse in 30 degrees flexion  |      866 |
+| left medial longitudinal                                      |      866 |
+| left lateral longitudinal                                     |      866 |
+| right anterior suprapatellar transverse in 30 degrees flexion |      866 |
+| left anterior suprapatellar transverse in maximal flexion     |      865 |
+| right anterior suprapatellar transverse in maximal flexion    |      865 |
+| right posterior medial transverse                             |      835 |
+| left posterior medial transverse                              |      834 |
 
 
 
@@ -593,10 +593,10 @@ This document provides a summary of the dataset contents:
 
 
 
-|    | category   |   counts |
-|---:|:-----------|---------:|
-|  0 | Right      |     6034 |
-|  1 | Left       |     6029 |
+| category   |   counts |
+|:-----------|---------:|
+| Right      |     6034 |
+| Left       |     6029 |
 
 
 ---
