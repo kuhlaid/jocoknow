@@ -17,6 +17,8 @@ The following information pertains to the curation of this dataset, meaning it r
 
 ## ToDo items
 
+- [x] add N values and file size to the dataset files list of the README (just under the file name)
+- [x] add a blurb about the total JoCoHS participation and why this subset is smaller
 - [x] added a method to check that categorical values listed in the metadata are not being used so we can remove them and conserve space
 - [x] change the empty values to -99 and include in the metadata
 - [x] update the user notebook and instructions.md
@@ -33,16 +35,16 @@ The following information pertains to the curation of this dataset, meaning it r
 - [x] Begin Curator Log to track curation decisions
     > - This curation log is not the format I would prefer but my curation log automation program is being designed.
     > - Since we are using the Dataverse API to upload and update files in our dataset via a Jupyter notebook, I need to write and test the Python scripts to ensure the processes I will use are reproducible. I created a reusable Python package (https://github.com/kuhlaid/DvApiMod5.13) and testing notebook (https://github.com/kuhlaid/dv-api-test) to ensure I could test all API calls. I then integrated the DvApiMod5.13 package into my existing curation notebook from a year ago which required some rewriting of code.
-    > - Once the dataset data is processed then the notebook to describe the dataset is written and tested.
+    > - The process for publishing the dataset is a bit convoluted since we have one process to upload files to the dataset and another to verify the upload was successful. The reason we do it this way is because we can rely on reproducible automation scripts to update our dataset consistently more so than relying on manually updating the dataset repository. We have a 'private' Notebook that processes identifying data and anonymizes it, then uploads the data files to the repository. We then use a secondary 'public' Notebook which is provided with the dataset to generate a README file that describes the dataset files and data table properties using the data uploaded to the repository to check that our data exists in the repository as we expect it to be. Finally we return back to the 'private' Notebook to remove the dataset draft and upload the final copy which contains the latest generated README Notebook and our final curation log. Then we push copies of the README, curation log, and metadata for the dataset to a Docusarus documentation site. At this point we review and publish the dataset or rerun this whole process as needed.
 
-- [ ] Open the related article and supporting information if available 
+- [x] Open the related article and supporting information if available 
 - [x] Inventory the dataset 
   - [x] Identify file formats
-    > Images were originally captured in JPEG format and the image copies were processed through automated Photoshop scripts that corrected the image metadata, deidentified the images, and saved the final images to PNG format.
+    > Images were originally captured in JPEG format and the image copies were processed through automated Photoshop scripts that corrected the image metadata, anonymized the images, and saved the final images to PNG format.
     > Data-tables are saved to CSV file format so they can be easily parsed through scripts.
 
   - [x] Review file organization, hierarchy, and naming convention(s)
-    > See the next step on image organizing. All files have a hierarchy 'tag' defined for them so while there is no explicit hierarching within a Dataverse datset, the tags mimic a hierarchy within a 'tree view'. Images were named using the categorical numbering assigned to the image types and to force the user to refer to the README file for details. The main README file is a Jupyter notebook for displaying not 
+    > See the next step on image organizing. All files have a hierarchy 'tag' defined for them so while there is no explicit hierarchy within a Dataverse dataset, the tags mimic a hierarchy within a 'tree view'. Images were named using the categorical numbering assigned to the image types and to force the user to refer to the README file for details. The main README file is a Jupyter notebook for displaying not 
 
   - [x] Extract zip files when possible
     > Since the Dataverse lumps dataset files into flat structure by default, it would have been difficult for users to find the README file in the dataset file list with thousands of images. For this reason I double-zipped image files into archives based on image position (single zipped files would automatically extract all images into the root dataset directory which I did not want). This meant only ~20 files were listed in the dataset instead of 11,000. Archiving the images in the also enables users to only download the types of images they are interested in without the need to download the entire dataset (which is rather large in size).
@@ -58,7 +60,7 @@ The following information pertains to the curation of this dataset, meaning it r
     > README, Codebook, Metadata, and Data Dictionary
   - [x] Complete
 - [x] Check whether human subject data (data about humans regardless of IRB determination) is present. If so, 
-  - [ ] Request consent form / participation agreement if not present 
+  - [x] Request consent form / participation agreement if not present 
   - [x] If the data are not de-identified, document for the "Request" step.
     > Raw data is not de-identified. Data was de-identified and during the data processing 
 - [x] Check the accessibility of all files 
@@ -130,9 +132,9 @@ The following information pertains to the curation of this dataset, meaning it r
 ### Essential Tasks
 
 - [x] Ask about additional data contributors, beyond publication authors. Consider using the Contributor Roles Taxonomy to communicate this: https://casrai.org/credit/  
-- [ ] Summarize conversations / outreach efforts in Curator Log
-  > Reaching out to PIs review the dataset before final publication
-  > Received PI suggestions for metadata updates, so updating the metadata file, removing the dataset draft from the repository and uploading the revisions to the repository. Adding scripts to include the variable labels in the statistics for the README. Once the new dataset draft is uploaded I regenerate the README file based on the latest metadata pushed to the repository.
+- [x] Summarize conversations / outreach efforts in Curator Log
+  > Reaching out to PIs to review the dataset before final publication
+  > Received PI and researcher suggestions for metadata updates, so updating the metadata file, removing the dataset draft from the repository and uploading the revisions to the repository. Adding scripts to include the variable labels in the statistics for the README. Once the new dataset draft is uploaded I regenerate the README file based on the latest metadata pushed to the repository.
 
 ## **AUGMENT Step**
 
@@ -148,12 +150,12 @@ The following information pertains to the curation of this dataset, meaning it r
   > Added directory labels for files so files can be organized using a hierarchy or table views 
   - [x] Documentation of file organization, hierarchy, and naming convention(s) 
   > Defined in Metadata file 
-- [x] Facilitate discoverability: 
+- [x] Facilitate dataset discovery: 
   - [x] Add links to related publications, grants, reports, source data, etc. 
   - [x] Provide additional description of files as appropriate for external indexing or other purposes. 
   - [x] Add subject terms 
 - [x] Ensure keywords are sufficient and representative 
-- [ ] Record all changes in the Curation Log 
+- [x] Record all changes in the Curation Log 
 - [x] Provide suggestions to improve accessibility of content (e.g., alt-text or additional descriptions; color contrast; etc.)
 
 ## **TRANSFORM Step**
@@ -180,9 +182,9 @@ The following information pertains to the curation of this dataset, meaning it r
 
 ### Essential Tasks
 
-- [ ] Test that files successfully download 
+- [x] Test that files successfully download 
 - [x] Check that any transformations didn't introduce problems 
-- [ ] Review final state of data and record with researcher before publication 
+- [x] Review final state of data and record with researcher before publication 
 - [x] Add any final changes to Curator Log  
 
 ### FAIR evaluation
@@ -219,8 +221,8 @@ Reusable:
     > - Initial deposit to draft state is to test the import and check expected files are imported
     > - The Jupyter notebook is then tested and adjusted to work with the data in the draft state
   - [x] Repository collection metadata 
-  - [ ] Provenance logs (changes by curators in the Transform step) 
-  - [ ] Service workflow 
-  - [ ] Correspondences and other interactions 
-  - [ ] Preservation packaging 
-  - [ ] Any additional requirements at your institution
+  - [x] Provenance logs (changes by curators in the Transform step) 
+  - [x] Service workflow 
+  - [x] Correspondences and other interactions 
+  - [x] Preservation packaging 
+  - [x] Any additional requirements at your institution
