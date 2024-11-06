@@ -23,7 +23,7 @@ Visit https://dataverse.harvard.edu/dataverse/jocohs to download datasets.
 I am interested in learning how you curate your data.
 
 :::info[Answer]
-See our [Curation tools](xx /docs/category/data-curation-tools/ xx) documentation.
+See our [Curation tools](/docs/category/data-curation-tools) documentation.
 :::
 
 ## Technical magic
